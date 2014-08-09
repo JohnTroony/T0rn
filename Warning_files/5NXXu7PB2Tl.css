@@ -1,0 +1,68 @@
+/*1300201853,169776067*/
+
+.oob_captcha .contacts_row{vertical-align:top}
+.oob_captcha .inputbutton{margin-right:10px}
+#secq_captcha_controls{margin-top:10px}
+.secq_captcha_prompt{font-size:13px}
+#secq_captcha_response{margin-left:10px}
+#smsscarce_captcha_instructions{margin-top:5px}
+.roadblock .steps{margin-left:auto;margin-right:auto;width:740px}
+.roadblock .roadblock_dialog{width:740px}
+.roadblock .friend_photo_dialog{width:1050px}
+.roadblock .error{margin-bottom:15px}
+.roadblock .inputcheckbox{margin:0 10px 0 0}
+.roadblock #content p,.roadblock #content ul{font-size:13px;line-height:1.5em;margin:0 0 15px 0;padding:0}
+.roadblock #content ul.errlist{margin:0 0 0 12px}
+.roadblock #content .error p{line-height:14px;margin:4px 0 0 0}
+.roadblock .UIContentBox{padding:0}
+.roadblock .mcafee_header{background:#aa0828 url(http://static.ak.fbcdn.net/rsrc.php/v1/zC/r/Jn7Qnt7VheR.gif) no-repeat 5px 5px;border-color:#7f0820;border-style:solid;border-width:1px 1px 0 1px;margin:-1px -1px 0 -1px;padding-top:28px}
+.roadblock .title_header{background:none;margin-bottom:10px;padding:0}
+.roadblock .title_header .title_h{background:none;font-size:12px;line-height:18px;padding:0}
+.roadblock .title_header h2.title_h{display:none}
+.roadblock #captcha_error_msg{margin-bottom:15px}
+.roadblock #captcha{margin:0 auto;padding:15px 0;width:310px}
+.roadblock #captcha h3{display:none}
+.roadblock #captcha label,.roadblock #captcha .captcha_input label{margin-right:7px;color:#666}
+.roadblock #captcha .recaptcha_text{font-size:12px;line-height:18px}
+.roadblock #captcha #recaptcha_image{margin-bottom:7px}
+.roadblock #captcha_response{margin-left:0}
+.roadblock .editor{margin:15px auto;width:310px}
+.roadblock .editor .label{color:#666;font-size:12px;font-weight:bold;padding:5px 5px 0 0;text-align:right;vertical-align:top}
+.roadblock .editor .tips{padding:5px 0 10px}
+.roadblock #content ul.security_tips{list-style:square;margin:0 0 15px 15px}
+.roadblock #content ul.security_tips_not_bold{list-style:square;margin:10px 0 10px 15px}
+.roadblock ul.security_tips img{padding-top:5px}
+.roadblock #content ul.delta_instructions{list-style:square;margin:0 0 15px 30px}
+.roadblock .buttons_roadblock{padding-top:15px;text-align:center}
+.roadblock .friend_photo_captcha #captcha{width:inherit}
+.roadblock #friendphotocaptcha_intro{width:inherit}
+.roadblock #friendphotocaptcha_intro p{padding:10px}
+.roadblock #friendphotocaptcha_choices{font-size:10px;font-weight:normal}
+.roadblock .UIMeter{display:inline-block;text-align:left}
+.roadblock .UIMeterLabel{font-weight:bold;padding-left:10px;vertical-align:middle;padding-top:3px}
+.roadblock .infected_files{font-weight:bold}
+.roadblock .removal_option_section{margin-bottom:25px}
+.roadblock .removal_option_section label{display:inline-block;line-height:1.4em}
+.roadblock .removal_option_section label strong{padding-right:5px}
+.roadblock .infected_files2{border:1px solid #bdc7d8;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;padding:3px;overflow:auto;height:350px}
+.roadblock .filelist{overflow:auto;height:350px}
+.roadblock label{font-size:12px;color:#000;font-weight:normal}
+.roadblock .opt_out{display:block;padding-top:5px}
+.roadblock .mcafee_logo{position:relative;top:5px;padding-right:10px}
+.roadblock_me .landing_page_form_buttons{padding-top:10px;text-align:center}
+.roadblock #roadblock_challenge_choices{padding:15px}
+.roadblock #roadblock_challenge_choices_list{padding:5px 10px 0 10px}
+.roadblock table.delta_list{margin-left:auto;margin-right:auto;width:100%}
+.roadblock table.delta_list tr td{padding:3px 0 3px 5px}
+.roadblock table.delta_list tr td.header_option{text-align:center}
+.roadblock table.delta_list tr.table_header td{border-bottom:1px solid #ccc;font-weight:bold}
+.roadblock table.delta_list tr.table_row td{border-bottom:1px solid #e3e6f1}
+.roadblock table.delta_list tr.table_row td.option_me{width:70px;background-color:#e0fcc6;text-align:center;padding:0}
+.roadblock table.delta_list tr.table_row td.option_not_me{width:70px;background-color:#e8afa8;text-align:center;padding:0}
+.roadblock table.checkpoint_steps{margin-left:50px}
+.roadblock table.checkpoint_steps tr td.cp_step_text{font-size:13px;padding-left:5px}
+.roadblock .subheading{font-size:13px}
+.roadblock .subsection{margin-left:30px}
+.warning_page #content p{line-height:19px;font-size:13px;margin-bottom:0}
+
+#bootloader_lh54U { height: 42px; }

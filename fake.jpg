@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+
+	<title>Safe Sex</title>
+
+
+
+	<meta name="Publisher" content="Coalition for Positive Sexuality">
+
+	<meta http-equiv="Reply-to" content="cps@positive.org">
+
+	<meta name="resource-type" content="document">  
+
+	<meta name="distribution" content="global">
+
+	<meta name="keywords" content="AIDS, HIV, STD, safe sex, safer sex, latex, condom, intercourse">
+
+	<meta name="description" content="Safe sex is always better! It's fun, and you don't have to worry as much.">
+
+	<meta name="generator" content="Microsoft FrontPage 4.0">
+
+
+
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+
+
+<body alink="#3399FF" bgcolor="#FFFFFF" link="#0066CC" vlink="#003399">
+
+
+
+<!-- page header -->
+
+
+
+<img src="fake_files/small.gif" alt="CPS" align="LEFT" border="0" height="120" hspace="0" width="108"><img src="fake_files/JustSayYes.gif" alt="JustSayYes" border="0" height="68" width="374"><br>
+
+<img src="fake_files/safesex.gif" alt="safesex" border="0" height="52" width="374">
+
+
+
+<!-- table for layout in 3 columns -->
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="552">
+
+	<tbody><tr valign="top">
+
+
+
+		<!-- button column -->
+
+
+
+		<td width="152">
+
+			<center><img src="fake_files/left.gif" usemap="#left" border="0" height="270" width="108"></center>
+
+		
+
+		<map name="left">
+
+		<area shape="rect" coords="0,0,108,45" href="http://www.positive.org/JustSayYes/index.html">
+
+		<area shape="rect" coords="0,46,108,90" href="http://www.positive.org/LetsTalk/welcome.html">
+
+		<area shape="rect" coords="0,91,108,135" href="http://www.positive.org/Resources/index.html">
+
+		<area shape="rect" coords="0,136,108,180" href="http://www.positive.org/TalkBack/index.html">
+
+		<area shape="rect" coords="0,181,108,225" href="http://www.positive.org/Search/index.html">
+
+		<area shape="rect" coords="0,226,108,270" href="http://www.positive.org/Home/index.html">
+
+		</map>
+
+
+
+<a href="javascript:void(0)" onclick='window.open("../images/girlgerms/big/lubesld.jpg","displayWindow","scrollbars=no,status=no,resizable=no,width=394,height=520")'><img src="fake_files/lubesld.jpg" border="0" height="202" hspace="5" vspace="5" width="151"></a><br><center><font size="2">Click poster to enlarge</font><br></center>		
+
+<p>
+
+</p><center><b>The secret to great sex... water-based lube</b></center>
+
+	
+
+<p>
+
+</p><center><a href="http://www.positive.org/Home/orders.html">Click here to get CPS posters</a></center>	
+
+		
+
+		
+
+		
+
+		</td>
+
+
+
+		<!-- spacer -->
+
+
+
+		<td width="6"> <br> </td>
+
+
+
+		<!-- bodytext column -->
+
+
+
+		<td width="264">
+
+
+
+		<!-- bodytext -->
+
+
+
+
+
+<p>
+
+<font size="+1"><b>N</b></font>obody has a body to die for. Safe sex is always better! It's fun, and you don't have to worry as much.
+
+</p>
+
+
+
+<img src="fake_files/safesex1.gif" align="RIGHT" border="0" height="119" width="119">
+
+
+
+<p>
+
+Safe sex means making sure you don't get anyone else's blood, semen, 
+vaginal fluids, or breast milk in your body -- and protecting your 
+partners too! Condoms, latex surgical
+<a href="http://www.positive.org/JustSayYes/moresafe.html">gloves</a>, and <a href="http://www.positive.org/JustSayYes/moresafe.html"> plastic wrap</a> are the only ways to protect yourself and your partner from <a href="http://www.positive.org/JustSayYes/glossary.html#std">STDs</a> and <a href="http://www.positive.org/JustSayYes/glossary.html#hiv">HIV</a>, but they're not foolproof.  You've got to use them correctly every time you have sex.
+
+</p>
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
+
+
+
+<p>
+
+<font size="+3"><b><tt>condoms</tt></b></font>
+
+</p>
+
+
+
+        <p>
+
+The best condoms for anal and vaginal <a href="http://www.positive.org/JustSayYes/glossary.html#intercourse">intercourse</a> are lubricated latex condoms.
+        We do not recommend lambskin condoms because they don&#8217;t block HIV and
+        STDs.<span style="mso-spacerun: yes">&nbsp; </span>I<span style="mso-bidi-font-size:10.0pt">f you're
+        allergic to latex you can use polyurethane condoms.&nbsp;</span>
+        Using lubricant will make things go smoother and give you added 
+protection. Lube is especially great for women the first time you have 
+intercourse, or if you tend to get sore. But always use a water-based 
+lube (such as KY Jelly, Astroglide, Aqua Lube, Wet, Foreplay, or Probe).
+ Oil breaks latex. Don't use vaseline, hand creams or lotions as a 
+lubricant. Also, treatments for yeast infections contain oil and will 
+break latex. Oil is good for salads and cars, not for sex! You can buy 
+water-based lube and condoms at the drugstore.
+
+</p>
+
+
+
+<p>
+
+Always use a condom.
+
+</p>
+
+
+
+      <p> <b>If you're going to suck your partner's dick (blowjob)</b>, put a condom 
+        on it first. Try non-lubricated or flavored condoms for this. Whatever 
+        you do, don't get semen (cum) in your mouth, because you could get an
+      STD or HIV 
+        that way. If you have a sore throat or small cuts on your gums (say from 
+        brushing your teeth), there's a risk of HIV going from the semen into 
+        your blood stream. </p>
+
+
+
+<p>
+
+<b>If you're doing someone with a sex toy</b> -- vegetable, dildo, 
+vibrator, or whatever -- put a condom on that thing! Don't switch the 
+toy from butthole to vagina, or from one person's body to another, until
+ you put a new condom on it.
+
+</p>
+
+
+
+<p>
+
+Some people think that putting on a condom is too much work when you're 
+supposed to be having fun.  But it's easy for condoms to be really fun 
+and erotic. Be creative!
+
+</p>
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
+
+
+
+<p>
+
+<font size="+3"><b><tt>here's what you do:</tt></b></font>
+
+</p>
+
+
+
+<img src="fake_files/safesex1.gif" align="RIGHT" border="0" height="119" width="119">
+
+
+
+	<ol> 
+
+		<li><b>Get ready.</b> Make sure your condoms are fresh -- check the 
+expiration date. Throw away condoms that have expired, been very hot, 
+carried around in your wallet, or washed in the washer.  If you think 
+the condom might not be good, get a new one. You and your partner are 
+worth it.<p>
+
+		
+
+		</p></li><li>That dick has to be hard before you put a condom on it. <p>
+
+		
+
+		</p></li><li><b>Open it. </b>Tear open the package carefully, so you don't rip the condom.  Careful if you use your teeth.<p>
+
+		
+
+		</p></li><li>If the penis is uncut (uncircumcised), pull the foreskin back first.<p>
+
+		
+
+		</p></li><li><b>Make sure the condom is right side out.</b>  It's like
+ a sock: there's a right side and wrong side.  First unroll it about 
+half an inch to see in which direction it is unrolling. Then put it on. 
+It should unroll easily down your dick. If you start off wrong, try 
+again with a new condom. You'll see when you practice.<p>
+
+		
+
+		</p></li><li><b>Hold the top half-inch of the condom</b> between your fingers when you roll it down. This keeps out air bubbles, which can cause the condom to break. It
+          also leaves a space at the end for the cum.<p>
+
+		
+
+		</p></li><li><b>Roll the condom down</b> as far as it will go. It should reach the base of the penis near the balls<p>
+
+		
+
+		</p></li><li>For anal intercourse, <b>use lots of lube.</b>  Water-based lube is great for vaginal intercourse, too. Put the lube on after you put on the condom, not before --
+          the condom could slip off. Add more lube often. Dry condoms break more easily.<p>
+
+		
+
+		</p></li><li>Guys --  when you pull out hold the condom near your 
+balls so it doesn't slip off. Try to pull out while you're still hard. 
+Take the condom off
+          only after you are completely out of your partner.<p>
+
+		
+
+		</p></li><li><b>Throw out the used condom right away.</b> Use a condom
+ only once. Never use the same condom for vaginal and anal intercourse. 
+Never use a condom that has been in, or used by someone else. Never cum 
+more than once in the same condom.<p> 
+
+	</p></li></ol>
+
+ 
+
+<p>
+
+<font size="+1"><b>G</b></font>uys, practice putting on a condom in a 
+comfortable place where you have plenty of time by yourself. You know 
+what we mean!  Practice makes perfect, and you'll impress your partner. 
+Girls, practice putting a condom on a banana.
+
+ 
+
+</p><p>
+
+<font size="+1"><b>Y</b></font>ou can get <a href="http://www.positive.org/JustSayYes/glossary.html#hiv">HIV</a> and <a href="http://www.positive.org/JustSayYes/glossary.html#std">STDs</a> even if you're not having <a href="http://www.positive.org/JustSayYes/glossary.html#intercourse">intercourse</a>. It can't hurt to cover all the bases -- with latex, that is!
+
+</p>
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
+
+
+
+<p>
+
+<font size="+3"><b><tt>plastic wrap</tt></b></font>
+
+</p>
+
+
+
+        <img src="fake_files/Dentaldam_smallBW.jpg" alt="dental dam" align="right" border="0" height="116" width="144">
+
+
+
+<p>
+
+If you're going to be licking your partner's vulva and clit (eating 
+out), use a piece of plastic wrap to be safe. Yes!  All you need is some
+plastic-wrap, or a condom cut down the side and laid flat. Be sure to 
+cover the entire crotch. You could put some honey or jam on your side of
+ the plastic wrap and just eat away! Also, putting some lube on the 
+other side of the plastic wrap may make it
+even more fun for her. But never flip the plastic over while you're 
+eating out. If you're going to move from one partner to another or from 
+butthole to
+vulva, use a new piece.
+
+</p>
+
+
+
+<p>
+
+It's especially important to use plastic wrap if your partner is having her period. Menstrual blood can carry HIV and STDs.
+
+</p>
+
+
+
+<p>
+
+If you're going to be licking your partner's butthole (rimming), cover it with plastic wrap too. This keeps you safe from
+harmful bacteria and STD's. A <b>dental dam</b> is a square piece of 
+latex that you can use just like plastic wrap. You can get dental dams 
+at condom stores, dentists offices, and some drugstores.
+
+</p>
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
+
+
+
+<p>
+
+<font size="+3"><b><tt>latex gloves</tt></b></font>
+
+</p>
+
+
+
+
+
+<p>
+
+Putting your fingers or fist in your partner's vagina or butthole 
+(finger fucking or fisting) is safe as long as you don't have cuts or 
+sores on your hands and your partner is not on her period. The safest 
+way to do it is to wear a latex surgical glove (not a dishwashing glove)
+ and use lots of water-based lube. You can get latex surgical gloves at 
+the drugstore.
+
+</p>
+
+
+
+<p>
+
+You can still safely do almost everything else that turns you on -- kissing, stroking, massaging, <br>
+grinding . . .</p>
+
+<p>
+
+</p>
+
+
+
+<nobr>
+
+
+
+	<!-- navigation buttons -->
+
+
+
+		<img src="fake_files/bottom.gif" usemap="#bottom" border="0" height="45" width="264">
+
+
+
+	<map name="bottom">
+
+		<area shape="rect" coords="28,1,80,46" href="http://www.positive.org/JustSayYes/respect.html">
+
+		<area shape="rect" coords="81,0,183,45" href="http://www.positive.org/JustSayYes/contents.html">
+
+		<area shape="rect" coords="184,0,236,45" href="http://www.positive.org/JustSayYes/aids.html">
+
+	</map>
+
+
+
+	<!-- hidden navigation for text only browsers -->
+
+
+
+		<font color="#FFFFFF" size="1">
+
+		| <a href="http://www.positive.org/JustSayYes/respect.html"><font color="#FFFFFF">&lt;</font></a>
+
+		| <a href="http://www.positive.org/JustSayYes/contents.html"><font color="#FFFFFF">Contents</font></a>
+
+		| <a href="http://www.positive.org/JustSayYes/moresafe.html"><font color="#FFFFFF">&gt;</font></a>
+
+		|
+
+		</font>
+
+
+
+</nobr>
+
+
+
+		</td>
+
+
+
+		<!-- spacer -->
+
+
+
+		<td width="10"><br></td>
+
+
+
+		<!-- pullout quotes column -->
+
+
+
+		<td align="RIGHT" width="104">
+
+
+
+		<!-- spacer -->
+
+
+
+		<img src="fake_files/blank.gif" border="0" height="72" width="104">
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
+
+		<font color="#0066CC" size="+2"><b><tt>nobody has a body to die for</tt></b></font>
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
+
+
+
+		<!-- spacer -->
+
+
+
+		<img src="fake_files/blank.gif" border="0" height="144" width="104">
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
+
+		<font color="#0066CC" size="+2"><b><tt>always use a condom</tt></b></font>
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
+
+
+
+		<!-- spacer -->
+
+
+
+		<img src="fake_files/blank.gif" border="0" height="360" width="104">
+
+
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
+
+		<font color="#0066CC" size="+2"><b><tt>be creative!</tt></b></font>
+
+<!-- color rule -->
+
+<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
+
+
+
+
+
+
+
+		<!-- end bodytext -->
+
+		
+
+		</td>
+
+
+
+	</tr>
+
+</tbody></table>
+
+
+
+<!-- footer -->
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="508">
+
+	<tbody><tr>
+
+		<td align="CENTER">
+
+
+
+<p>
+
+<font size="-1">
+
+| <a href="http://www.positive.org/JustSayYes/index.html">JustSayYes</a>
+
+| <a href="http://www.positive.org/LetsTalk/welcome.html">LetsTalk</a>
+
+| <a href="http://www.positive.org/Resources/index.html">Resources</a>
+
+| <a href="http://www.positive.org/TalkBack/index.html">TalkBack</a>
+
+| <a href="http://www.positive.org/Search/index.html">Search</a>
+
+| <a href="http://www.positive.org/Home/index.html">Home</a>
+
+| <a href="http://www.positive.org/Home/orders.html">Get CPS Stuff</a>
+
+|
+
+</font>
+
+</p>
+
+<table bordre="0" width="300"><tbody><tr><td align="left">
+
+<b>The Coalition for Positive Sexuality (CPS)</b> is a grassroots, not-for-profit,
+
+activist organization.  <b>CPS</b> is funded through donations and grants.  Please help us to continue providing teens with candid sex education
+          materials, and this website, by making a tax-deductible donation. <a href="http://www.positive.org/Home/contact-us.html" target="_blank">Email us to find out how to donate.</a><br>
+</td></tr></tbody></table>
+
+<p>
+
+<font size="-1">
+
+<a href="http://www.positive.org/Home/copyright.html">Copyright \A9 1997 
+
+Coalition for Positive Sexuality</a>
+
+</font>
+
+</p>
+
+
+
+		</td>
+
+	</tr>
+
+</tbody></table>
+
+
+
+<!--
+
+	Rendering Information:
+
+	adrObject "user.websites.CPS.JustSayYes.safesex"
+
+	objectCreated "3/27/97; 1:37:39 PM"
+
+	objectModified "8/12/98; 4:48:34 PM"
+
+	lastBuildTime "8/12/98; 6:45:02 PM"
+
+
+
+	site design and programming
+
+		by Brad Borevitz (bradb@123pushit.com)
+
+
+
+		design and all graphic elements
+
+		copyright 1997 pushit web development
+
+-->
+
+
+
+
+
+
+
+</body></html>

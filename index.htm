@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+
+
+
+<title>Linux Proxy Server - How To Set Up and Configure IPTABLES for NAT Linux Proxy Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="How to set up and configure a Linux proxy server using IPTABLES rulesets.">
+<meta name="keywords" content="proxy servers,linux,basics,home,guide,beginner,iptables,hwoto,howto,newbie,tutor,tutorial,easy,simple,starting,web server,networking,installing,installation,sharing,share,internet,broadband,protocol,install,beginning,basic,configure,build,networking,training,setting up,setup,basics,help,home network,instruction,configuring,configure,server,beginning,newbie,step-by-step,easy,how to,simple,mail server,help,info,information,assistance,reference,understanding,basics,introduction,configuration,managing,administration,administrating,administrator,learn,sample,example,explanation,definition,explain,starting,set up,building,guides,tutorials,newbies,beginners">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+if (document.images) {
+    cdbuttonup       = new Image();
+    cdbuttonup.src   = "cd-tag-off.gif" ;
+    cdbuttondown     = new Image() ;
+    cdbuttondown.src = "cd-tag-on.gif" ;
+    gearbuttonup       = new Image();
+    gearbuttonup.src   = "gear-tag-off.gif" ;
+    gearbuttondown     = new Image() ;
+    gearbuttondown.src = "gear-tag-on.gif" ;
+}
+function buttondown( buttonname )
+{
+    if (document.images) {
+      document[ buttonname ].src = eval( buttonname + "down.src" );
+    }
+}
+function buttonup ( buttonname )
+{
+    if (document.images) {
+      document[ buttonname ].src = eval( buttonname + "up.src" );
+    }
+}
+
+// -->
+</script>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head><body topmargin="0" leftmargin="0" bgcolor="#ffffff" link="#ae0039" marginheight="0" marginwidth="0" text="#000000" vlink="#dd0000">
+<a name="top"> </a>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="left" bgcolor="#c70036" nowrap="nowrap" valign="middle">
+<a href="http://www.aboutdebian.com/index.htm"><img src="index_files/smmain.gif" alt="Home Page" border="0" hspace="0" vspace="0"></a> <img src="index_files/menu.gif" usemap="#menu" border="0" hspace="0" vspace="0">
+</td>
+<td align="right" bgcolor="#c70036" nowrap="nowrap" valign="middle" width="2%">
+<a href="http://www.aboutdebian.com/order.htm" onmouseover="buttondown('cdbutton')" onmouseout="buttonup('cdbutton')"><img src="index_files/cd-tag-off.gif" name="cdbutton" border="0"></a>
+</td>
+</tr></tbody></table>
+<map name="menu">
+
+<area shape="rect" coords="113,4,205,12" href="http://www.aboutdebian.com/linux.htm" alt="Linux Basics">
+<area shape="rect" coords="113,18,198,27" href="http://www.aboutdebian.com/install5.htm" alt="Debian Linux Installation">
+<area shape="rect" coords="113,34,186,43" href="http://www.aboutdebian.com/packages.htm" alt="Using Debian Packages">
+<area shape="rect" coords="113,49,177,58" href="http://www.aboutdebian.com/modems.htm" alt="Linux Modem Setup">
+<area shape="rect" coords="113,64,200,73" href="http://www.aboutdebian.com/network.htm" alt="Setting Up A Network">
+<area shape="rect" coords="113,79,152,88" href="http://www.aboutdebian.com/dns.htm" alt="Setting Up DNS Servers">
+
+<area shape="rect" coords="238,4,302,12" href="http://www.aboutdebian.com/internet.htm" alt="Linux Internet Servers">
+<area shape="rect" coords="238,18,275,27" href="http://www.aboutdebian.com/lan.htm" alt="Linux LAN Servers">
+<area shape="rect" coords="238,34,310,43" href="http://www.aboutdebian.com/database.htm" alt="Linux Database Server">
+<area shape="rect" coords="238,49,292,58" href="http://www.aboutdebian.com/syslog.htm" alt="Linux Syslog Server">
+<area shape="rect" coords="238,64,271,73" href="http://www.aboutdebian.com/fax.htm" alt="Linux Fax Server">
+<area shape="rect" coords="238,79,317,88" href="http://www.aboutdebian.com/webcam.htm" alt="Linux Web Cam Servers">
+
+<area shape="rect" coords="355,4,439,12" href="http://www.aboutdebian.com/proxy.htm" alt="Linux Proxy/NAT Servers">
+<area shape="rect" coords="355,18,420,27" href="http://www.aboutdebian.com/firewall.htm" alt="Linux Firewall Servers">
+<area shape="rect" coords="355,34,419,43" href="http://www.aboutdebian.com/security.htm" alt="Linux Security">
+<area shape="rect" coords="355,49,430,58" href="http://www.aboutdebian.com/compile.htm" alt="Compiling Linux Programs">
+<area shape="rect" coords="355,64,426,73" href="http://www.aboutdebian.com/desktop.htm" alt="Linux GUI Desktops">
+<area shape="rect" coords="355,79,445,88" href="http://www.aboutdebian.com/whatnow.htm" alt="What Now?">
+
+</map>
+<br><br><br>
+</font><blockquote>
+
+<center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><font color="#c30035" face="verdana" size="5">
+<b>
+How To Set Up A Debian Linux Proxy Server
+</b>
+</font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br><br>
+</font><center>
+<table border="0">
+<tbody><tr><td align="center" nowrap="nowrap">
+<font color="#000000" face="arial, helvetica, sans serif" size="2">
+The material on this page was prepared using <b>Sarge</b> or <b>Etch</b><br>
+configured using our Installation and Packages pages.<br>
+If you did not use our pages to set up your system, what you<br>
+encounter on your system may be different than what is given here.
+</font></td></tr></tbody></table>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br><br>
+This page covers using IPTABLES with the 2.4 Linux kernel.<br>
+For the page on using IPCHAINS with the 2.2 Linux kernel click <a href="http://www.aboutdebian.com/proxy2.htm">here</a>.
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br><br>
+Back on the <a href="http://www.aboutdebian.com/network.htm">Networking</a>
+page we covered the basics of the "what", "where", and "why" of a proxy
+server, and the reason NAT ("masquerading" in Linux-ese) is needed, as
+well as how to configure the Linux networking files to get your system
+operational on a network. This page will show you how to turn your
+networked system into a proxy server.
+<br><br>
+Recall also from the <a href="http://www.aboutdebian.com/network.htm">Networking</a>
+page that a proxy server is a "dual-homed" system. In other words, it
+needs two network interfaces. The "internal" interface (a NIC card)
+connects to the internal LAN and the "external" interface connects to
+the outside network (typically the Internet). The external interface
+can be a NIC card which connects to a cable or DSL modem, or you can
+simply use a dial-up modem as your external interface. (We showed you
+how to get a dial-up modem working back on the <a href="http://www.aboutdebian.com/modems.htm">Modems</a> page.) The script below will work in either instance.
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<img src="index_files/share-both.gif" alt="Internet Connection Sharing" border="0">
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+Naturally, the dial-up modem shown in the diagram above could also be
+an internal PCI or ISA slot modem. In any event, be sure you can access
+Internet resources from the Debian system itself using your cable, DSL,
+or dial-up modem <i>before</i> proceeding to add proxy server functionality to the system.
+<br><br>
+</font><blockquote>
+<blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><font color="#a8003b"><b>*** WARNING ***</b></font>
+&nbsp; &nbsp;A proxy server is fine if you plan to share a dial-up
+(modem) connection. However, if you have an "always on" DSL or cable
+connection a proxy server can put your systems at risk because <b>it offers very little protection against outside intrusion into your network.</b>
+</font></blockquote>
+</blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+Because of this, you should consider this material on proxy servers an introduction, not a solution.  <b>It's very easy to go from a proxy server to a firewall system that also does NAT.</b>  All you need to do is simply add a few more IPTABLES commands to the<font color="#a8003b" face="courier" size="4"><b> proxy.sh </b></font>script to turn it into a<font color="#a8003b" face="courier" size="4"><b> firewall.sh </b></font>script.  We'll do just that on the <a href="http://www.aboutdebian.com/firewall.htm">Firewall</a> page.
+<br><br>
+In addition to being more secure, the firewall script can be modified
+to limit access based on protocol (TCP/UDP), ports (port 80 for Web and
+25 for mail), the address of the user's machine, or the address of a
+Web site you wish to block access to. It also has a command for those
+who wish to have the firewall system simultaneously act as a Web server
+to host a family Web site or serve up Web cam images.
+<br><br>
+</font><blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><b>Note: </b>&nbsp;You
+may see the "Squid proxy server" product mentioned in various Web
+pages, books, and articles about Linux proxy servers. You don't need
+Squid or any other product to set up a Linux proxy server. The
+advantage of Squid is that it's a <i>caching</i> proxy server product.
+The caching function will store cached copies of frequently visited Web
+pages on the proxy server's local hard-drive and serve those up to
+requesting browsers rather than bringing a fresh copy over the
+Internet. You'd need quite a large number of users on your network to
+see any benefit of using a caching proxy server.
+</font></blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br><br>
+<table border="0">
+<tbody><tr><td align="left" valign="middle">
+<font color="#c30035" face="verdana" size="3"><b>The Kernel and NAT</b></font>
+</td><td align="right" valign="middle" width="1%">
+<a href="#top"><img src="index_files/up.gif" alt="Top of page" border="0" hspace="0" vspace="0"></a></td></tr></tbody></table>
+<br>It is the Linux kernel that inspects the packets and modifies the
+addresses in the packet headers (the NAT function) before forwarding
+them on to the final destination system (whether that is an Internet
+server for outgoing packets or a network workstation for incoming
+packets).
+<br><br>We need a way to tell the kernel how to handle packets. With
+the Linux 2.2 kernel (Potato and Woody) we used the IPCHAINS command to
+do that. With the Linux 2.4 kernel (Sarge) IPTABLES is used. We issue a
+series of IPTABLES commands with each command establishing a "rule"
+which dictates how packets should be handled (which should be forwarded
+and which should be dropped). The series of rules that is built using a
+series of IPTABLES commands is called a "ruleset" or "chain".
+<br><br>A ruleset only exists in memory so when you reboot the system
+it disappears and has to be recreated. If you had to enter the
+necessary IPTABLES commands manually every time you rebooted your
+system it would be a lot of repetitious work. Instead, we put the
+commands in a shell script. We can optionally set the script file to
+get executed automatically at boot up if this is going to be a
+full-time proxy server. We'll see how to set that up later in this
+page.
+<br><br>
+The following is a shell script that was derived from the Linux 2.4 kernel script in the <a href="http://www.tldp.org/HOWTO/IP-Masquerade-HOWTO/" target="_blank">IP Masquerade HOWTO</a>.
+If you're viewing this page on a Windows PC the simplest way to get the
+below script is to drag over it to select it, copy it to your
+clipboard, and paste it into Notepad. You can then save it and ftp it
+to your server.
+<br><br>At first glance the script looks long and hideos but that's
+only because we've gone overboard with the comments. Most shell scripts
+aren't this heavily commented. To set this script up you'll need to:
+</font><blockquote>
+<ul>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">Section A
+<li>Enter your internal interface designation (<font face="courier">INTIF</font>)
+</li><li>Enter your external interface designation (<font face="courier">EXTIF</font>)<br>
+Section B
+</li><li>If your external interface uses a <b>static</b> IP address
+<ul>
+<li>Uncomment the<font face="courier"> EXTIP </font>line and enter your static IP address
+</li></ul>
+Section C
+</li><li>If your external interface uses a <b>dynamic</b> IP address
+<ul>
+<li>Uncomment the<font face="courier"> EXTIP </font>line
+</li></ul>
+</li></font></ul>
+</blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">The
+comments in the script give a little more information on what values to
+enter and what lines need to be uncommented for your situation.
+<br><br><br>
+<table border="0">
+<tbody><tr><td nowrap="nowrap">
+<font face="courier" size="3">
+<pre>#!/bin/sh
+
+#  IPTABLES  PROXY  script for the Linux 2.4 kernel.
+#  This script is a derivitive of the script presented in
+#  the IP Masquerade HOWTO page at:
+#  www.tldp.org/HOWTO/IP-Masquerade-HOWTO/firewall-examples.html
+#  It was simplified to coincide with the configuration of
+#  the sample system presented in the Guides section of
+#  www.aboutdebian.com
+#
+#  This script is presented as an example for testing ONLY
+#  and should not be used on a production proxy server.
+#
+#    PLEASE SET THE USER VARIABLES
+#    IN SECTIONS A AND B OR C
+
+echo -e "\n\nSETTING UP IPTABLES PROXY..."
+
+
+# === SECTION A
+# -----------   FOR EVERYONE 
+
+# SET THE INTERFACE DESIGNATION FOR THE NIC CONNECTED TO YOUR INTERNAL NETWORK
+#   The default value below is for "eth0".  This value 
+#   could also be "eth1" if you have TWO NICs in your system.
+#   You can use the ifconfig command to list the interfaces
+#   on your system.  The internal interface will likely have
+#   have an address that is in one of the private IP address
+#   ranges.
+#       Note that this is an interface DESIGNATION - not
+#       the IP address of the interface.
+#   Enter the internal interface's designation for the
+#   INTIF variable:
+
+INTIF="eth0"
+
+
+# SET THE INTERFACE DESIGNATION FOR YOUR "EXTERNAL" (INTERNET) CONNECTION
+#   The default value below is "ppp0" which is appropriate 
+#   for a MODEM connection.
+#   If you have two NICs in your system change this value
+#   to "eth0" or "eth1" (whichever is opposite of the value
+#   set for INTIF above).  This would be the NIC connected
+#   to your cable or DSL modem (WITHOUT a cable/DSL router).
+#       Note that this is an interface DESIGNATION - not
+#       the IP address of the interface.
+#   Enter the external interface's designation for the
+#   EXTIF variable:
+
+EXTIF="ppp0"
+
+
+# ! ! ! ! !  Use ONLY Section B  *OR*  Section C depending on
+#  ! ! ! !   the type of Internet connection you have.
+
+
+# === SECTION B
+# -----------   FOR THOSE WITH STATIC PUBLIC IP ADDRESSES
+
+   # SET YOUR EXTERNAL IP ADDRESS
+   #   If you specified a NIC (i.e. "eth0" or "eth1" for
+   #   the external interface (EXTIF) variable above,
+   #   AND if that external NIC is configured with a
+   #   static, public IP address (assigned by your ISP),
+   #   UNCOMMENT the following EXTIP line and enter the
+   #   IP address for the EXTIP variable:
+
+#EXTIP="your.static.IP.address"
+
+
+
+# === SECTION C
+# ----------   DIAL-UP MODEM, AND RESIDENTIAL CABLE-MODEM/DSL (Dynamic IP) USERS
+
+
+# SET YOUR EXTERNAL INTERFACE FOR DYNAMIC IP ADDRESSING
+#   If you get your IP address dynamically from SLIP, PPP,
+#   BOOTP, or DHCP, UNCOMMENT the command below.
+#   (No values have to be entered.)
+#         Note that if you are uncommenting these lines then
+#         the EXTIP line in Section B must be commented out.
+
+#EXTIP="`/sbin/ifconfig ppp0 | grep 'inet addr' | awk '{print $2}' | sed -e 's/.*://'`"
+
+
+# --------  No more variable setting beyond this point  --------
+
+
+echo "Loading required stateful/NAT kernel modules..."
+
+/sbin/depmod -a
+/sbin/modprobe ip_tables
+/sbin/modprobe ip_conntrack
+/sbin/modprobe ip_conntrack_ftp
+/sbin/modprobe ip_conntrack_irc
+/sbin/modprobe iptable_nat
+/sbin/modprobe ip_nat_ftp
+/sbin/modprobe ip_nat_irc
+
+echo "    Enabling IP forwarding..."
+echo "1" &gt; /proc/sys/net/ipv4/ip_forward
+echo "1" &gt; /proc/sys/net/ipv4/ip_dynaddr
+
+echo "    External interface: $EXTIF"
+echo "       External interface IP address is: $EXTIP"
+
+echo "    Loading proxy server rules..."
+
+# Clearing any existing rules and setting default policy
+iptables -P INPUT ACCEPT
+iptables -F INPUT 
+iptables -P OUTPUT ACCEPT
+iptables -F OUTPUT 
+iptables -P FORWARD DROP
+iptables -F FORWARD 
+iptables -t nat -F
+
+# FWD: Allow all connections OUT and only existing and related ones IN
+iptables -A FORWARD -i $EXTIF -o $INTIF -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+
+# Enabling SNAT (MASQUERADE) functionality on $EXTIF
+iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+echo -e "       Proxy server rule loading complete\n\n"
+
+</pre>
+</font>
+</td></tr></tbody></table>
+<br>
+The<font face="courier"> ESTABLISHED </font>keyword in the rule
+that fowards packets from the External (Internet) interface to the
+Internal (LAN) interface limits incoming traffic to that which is a
+"response" to a previously sent outgoing request (a Web page coming
+back from a browser request for example). The rule with the<font face="courier"> MASQUERADE </font>keyword is the rule that causes the actual NAT translation.
+<br><br>
+Once you've pasted the script into a text editor be sure to read
+through the file's comments and make any necessary changes to the file.
+Once you've done that, save the file as<font color="#a8003b" face="courier" size="4"><b> proxy.txt </b></font>to your local hard-drive. (Using a<font face="courier"> .txt </font>extension
+avoids hassles when saving the file with NotePad and will help ensure
+that your ftp program transfers the file using ASCII mode rather than
+binary. We'll change the extension later.)
+<br><br>
+</font><blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">One note of interest.  Recall that back on the <a href="http://www.aboutdebian.com/linux.htm">Linux Basics</a>
+page we mentioned how you can use "piping" to pass the output of one
+command into another. In the above script the long command immediately
+above the line
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><font face="courier" size="3"># --------  No more variable setting beyond this point  --------</font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">has
+three pipes which passes output among four different commands
+(ifconfig, grep, awk and sed). This series of commands will extract the
+IP address assigned to a modem (or modem-like device) so that it can be
+assigned to the<font face="courier"> EXTIP </font>shell script variable. 
+</font></blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">If we
+were to remove all of the comments from the above script we find that
+the actual script itself isn't very long. And most of what remains are
+the commands which echo imformational messages to the screen which
+indicate the progress of the script. If we were to remove those also,
+the final script for those who use an external interface that receives
+a dynamically-assigned IP address would only be:
+<br><br>
+<table border="0">
+<tbody><tr><td nowrap="nowrap">
+<font face="courier" size="3">
+<pre>#!/bin/sh
+INTIF="eth0"
+EXTIF="ppp0"
+EXTIP="`/sbin/ifconfig ppp0 | grep 'inet addr' | awk '{print $2}' | sed -e 's/.*://'`"
+/sbin/depmod -a
+/sbin/modprobe ip_tables
+/sbin/modprobe ip_conntrack
+/sbin/modprobe ip_conntrack_ftp
+/sbin/modprobe ip_conntrack_irc
+/sbin/modprobe iptable_nat
+/sbin/modprobe ip_nat_ftp
+echo "1" &gt; /proc/sys/net/ipv4/ip_forward
+echo "1" &gt; /proc/sys/net/ipv4/ip_dynaddr
+iptables -P INPUT ACCEPT
+iptables -F INPUT 
+iptables -P OUTPUT ACCEPT
+iptables -F OUTPUT 
+iptables -P FORWARD DROP
+iptables -F FORWARD 
+iptables -t nat -F
+iptables -A FORWARD -i $EXTIF -o $INTIF -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+</pre>
+</font>
+</td></tr></tbody></table>
+<br>Once you make the necessary changes and save the file you can use
+an ftp program to transfer the script file to your Debian system. Be
+sure to use the <b>ASCII</b> transfer mode.  (We showed you how to set up ftp server functionality back on the <a href="http://www.aboutdebian.com/packages.htm">Packages</a>
+page.) Use anonymous ftp to transfer the file (where the username is
+"anonymous" and the password is an e-mail address). This is puts the
+file in<font color="#a8003b" face="courier" size="4"><b> /home/ftp/pub/incoming </b></font>directory on the Debian system so it's easy to find.
+<br><br>
+After connecting to your Debian system, use the ftp client to navigate into the <b>pub</b> directory and then into the <b>incoming</b>
+directory. This is the directory where anonymous ftp visitors have
+write access. When you transfer the file (using ASCII mode), it may not
+show up in the list of files on the "remote" (Debian) system, but it is
+there. (You can verify that by trying to transfer it a second time. You
+should get an error saying you don't have overwrite permission.)
+<br><br>Once the file is transferred, enter the following commands on
+your debian system to copy/rename the file to the appropriate scripts
+directory and to make it executable for root:
+<br><br>
+</font><blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><font color="#a8003b" face="courier" size="3">
+cp /home/ftp/pub/incoming/proxy.txt /etc/init.d/proxy.sh<br>
+chmod 755 /etc/init.d/proxy.sh
+</font>
+</font></blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">The<font color="#a8003b" face="courier" size="4"><b> .sh </b></font>part
+of the new file name just indicates that it's a shell script. Not all
+shell scripts use an extension but this makes it easier to identify
+your scripts.
+<br><br>
+<b><i>Testing Your Proxy Server</i></b>
+<br><br>
+If you set the script to use the<font color="#a8003b" face="courier" size="4"><b> ppp0 </b></font>as the external interface (i.e. set the<font color="#a8003b" face="courier" size="4"><b> EXTIF </b></font>variable equal to <font color="#a8003b" face="courier" size="4"><b>ppp0</b></font>), use the<font color="#a8003b" face="courier" size="4"><b> pon </b></font>command to connect the modem to your ISP.  You must have an active connection for the<font color="#a8003b" face="courier" size="4"><b> ppp0 </b></font>interface to exist, and this interface must exist before running the script. 
+<br><br>
+</font><blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><b>Note:</b>
+&nbsp;You cannot set this script to run at boot up if you are using a
+dynamic IP-based modem connection for the external interface such as
+with a dial-up modem or residential DSL or cable service without some
+modification (which we'll see below).
+</font></blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3">Once connected to the Internet, run the script by entering the command:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>/etc/init.d/proxy.sh</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+You should see the script messages echoed to the screen as it executes.  Congratulations!  You now have a proxy server.
+<br><br>Try it out. All you have to do is go to one of the other
+systems on your internal LAN and change it's "default gateway" value to
+the IP address of the Debian system's <b>internal</b> interface.  The following diagram from the <a href="http://www.aboutdebian.com/network.htm">Networking</a>
+page shows you what's happening when you do. (The "cable or DSL modem"
+in the diagram could be your dial-up modem connected to a serial port
+if that's what you're using.)
+<br><br>
+</font><center><font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<img src="index_files/sharing2.gif" alt="How To Share An Internet Connection" border="0">
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+In the above diagram, you'd set the default gateway on your network
+system to 192.168.5.1 which is the IP address of the internal interface
+on the Linux proxy server. If you're using a Windows PC, you would go
+into <nobr>Start/Settings/Control Panel/Network</nobr> and open the <nobr>TCP/IP properties</nobr>
+to change the default gateway value. Also make sure the DNS server
+setting points to your ISP's DNS server. You may have to reboot your
+Windows system after making these changes.
+<br><br>Once your Windows system has been changed and rebooted, open
+up a DOS window and try a trace route by entering the following
+command:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>tracert www.debian.org</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+The first thing you should see shows you that the<font color="#a8003b" face="courier" size="4"><b> www.debian.org </b></font>got
+resolved to an IP address which means you were able to access your
+ISP's DNS server to resolve the domain name. Next your should see a
+series of trace responses. Look at the IP address on the right end of
+the <b>first</b> trace response. It should be the IP address of your
+Debian system's internal interface. Here's the trace output from my
+system:
+<br><br>
+<font color="#a8003b" face="courier" size="3">
+<pre>Tracing route to www.debian.org [194.109.137.218] over a maximum of 30 hops:
+
+<font color="#0000c0"> 1   &lt;10 ms   &lt;10 ms   &lt;10 ms  sarge 192.168.5.1</font>
+ 2   150 ms   140 ms   151 ms  as29.nwbl0.myisp.net 
+ 3   150 ms   141 ms   140 ms  vl15.rsm0.myisp.net
+ 4   150 ms   141 ms   140 ms  3.ge3-0-0.rtr1.myisp.net
+ 5   151 ms   140 ms   140 ms  0.rtr0.chcg0.il.myisp.net
+ 6   150 ms   150 ms   140 ms  pvc-von.225io.myisp.net 
+ 7   140 ms   140 ms   150 ms  206.220.243.189 
+ 8   211 ms   200 ms   200 ms  oc3-pos0-0.gsr12012.sjc.he.net
+ 9   180 ms   190 ms   191 ms  gige-g0-0.gsr12008.pao.he.net 
+10   190 ms   191 ms   190 ms  fe-1-1-0.pao.via.net 
+11   191 ms   200 ms   190 ms  s6-0.border1-7206.valinux.com
+12   200 ms   190 ms   190 ms  fe0-0.dist5-3662.vasoftware.com
+13   190 ms   180 ms   201 ms  e2-1.community8-bi8000.vasoftware.com
+14   211 ms   200 ms   200 ms  klecker.debian.org
+
+Trace complete.
+</pre>
+</font>
+<br><br> 
+If the trace doesn't work, try bypassing DNS by tracing to the debian.org server using the IP address:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>tracert 194.109.137.218</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>If
+this works, and the above didn't, it indicates your DNS settings (on
+your Windows system) are not correct. In any case, the IP address of
+the internal interface on your Debian system should be the first line
+in any trace response. If it's not, check your TCP/IP properties again.
+If you don't get any response, see if you can ping the internal
+interface of your Debian system with the command:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>ping 192.168.5.1</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+If you can't ping that, see if you can ping any other systems on your LAN (you'll have to use the<font color="#a8003b" face="courier" size="4"><b> ipconfig </b></font>or<font color="#a8003b" face="courier" size="4"><b> winipcfg </b></font>command
+on another Windows system to find out what its IP address is in order
+to ping it). If you can ping a different system on your LAN, something
+is wrong with the network configuration on your Debian box. If you
+can't ping any other system, something is wrong with the network
+configuration (likely the TCP/IP properties) on the system you're using
+to do the pinging.
+<br><br>
+With the above script, there is no easy way to "turn off" the proxy function once you use the<font color="#a8003b" face="courier" size="4"><b> proxy.sh </b></font>script to turn it on.  Simply reboot the system to stop it from acting as a proxy server.
+<br><br>
+In the next section you'll see how to get the proxy/firewall functionality to start up automatically when you boot the system.
+<br><br><br>
+<table border="0">
+<tbody><tr><td align="left" valign="middle">
+<font color="#c30035" face="verdana" size="3"><b>Automatic Startup</b></font>
+</td><td align="right" valign="middle" width="1%">
+<a href="#top"><img src="index_files/up.gif" alt="Top of page" border="0" hspace="0" vspace="0"></a></td></tr></tbody></table>
+<br>Remember that you cannot run a proxy server or firewall script at
+system startup if your Internet connection needs to be dialed. That's
+because the script looks for the IP address your ISP has assigned to
+the external interface, and the external interface won't have an IP
+address until after a connection is made. (However, there may be a way
+around this.)
+<br><br>In the case of a real, full-time proxy server, firewall, or
+router, you'll want to set things up so the appropriate script gets run
+automatically when you boot the system. Back on the <a href="http://www.aboutdebian.com/linux.htm">Linux Basics</a> page we covered the Debian startup process.  Recall from that discussion that we not only need to put the scripts in the<font color="#a8003b" face="courier" size="4"><b> /etc/init.d </b></font>directory, which we have already done with the<font color="#a8003b" face="courier" size="4"><b> proxy.sh </b></font>script, but we also need to create the appropriate links to the scripts.
+<br><br>
+There's no way you should ever have NFS file sharing enabled on an
+Internet-connected system so runlevel 2, which is Debian's default, is
+appropriate. As such, we'll need to create a symbolic link in the<font color="#a8003b" face="courier" size="4"><b> /etc/rc2.d </b></font>subdirectory.  Recall that the name of this link needs to start with an upper-case <b>S</b>
+which needs to be followed by a two-digit number. In order to do this
+we just need to know how to create a symbolic link. For that we use the<font color="#a8003b" face="courier" size="4"><b> ln </b></font>command.
+<br><br>
+If we do a:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>
+man ln
+</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+to pull up the man page for the<font color="#a8003b" face="courier" size="4"><b> ln </b></font> command we see the syntax is:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>
+ln [OPTIONS] TARGET LINK_NAME
+</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+We want to use the<font color="#a8003b" face="courier" size="4"><b> -s </b></font> option to create a <b>s</b>ymbolic link.  As a result, our command would be:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>
+ln -s /etc/init.d/proxy.sh /etc/rc2.d/S95proxy
+</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+The <b>95</b> part of the link name ensures that the<font color="#a8003b" face="courier" size="4"><b> proxy.sh </b></font>script won't be run until near the end of the startup process.  If you go into the<font color="#a8003b" face="courier" size="4"><b> /etc/rc2.d </b></font>subdirectory and do an<font color="#a8003b" face="courier" size="4"><b> ls </b></font>you will see that 95 wasn't already being used.  Also, take note of the <font color="#a8003b" face="courier" size="4"><b> S91apache </b></font>link.  This was created when we installed the Apache package. 
+<br><br>
+<b><i>Auto-Dialing</i></b>
+<br><br>
+So what if all we have is a dial-up connection to the Internet? Are we
+sunk? No. If you ever worked with DOS batch files you may recall the
+PAUSE command. You could put the PAUSE command in a batch file followed
+by a number to get the execution of the program to idle for the number
+of seconds equal to the number after the command. Naturally Linux has
+an equivalent. It's the<font color="#a8003b" face="courier" size="4"><b> sleep </b></font>command.
+<br><br>
+Rather than run the<font color="#a8003b" face="courier" size="4"><b> pon </b></font>dialer script manually, we can "call" it near the beginning of an proxy or firewall script and then follow that call with a<font color="#a8003b" face="courier" size="4"><b> sleep </b></font>statement to give the modem a chance to connect.  The modifications would look like this (in blue):
+<br><br>
+<font face="courier" size="3">
+<pre>#    PLEASE SET THE USER VARIABLES
+#    IN SECTIONS A AND B OR C
+
+echo -e "\n\nSETTING UP IPTABLES PROXY..."
+
+<font color="#0000c0">
+echo "    Dialing Internet connection..."
+/usr/bin/pon
+sleep 15
+</font>
+
+# === SECTION A
+# -----------   FOR EVERYONE 
+
+
+</pre> 
+</font>
+Naturally, if you don't get a connection for some reason the setup of
+the proxy server or firewall will fail so it's best to monitor the
+bootup messages to make sure everything initializes OK.
+<br><br>Since most ISPs don't allow "camping" on a modem line (staying
+connected for long periods of time) this setup isn't something you'd
+want to use permanently. However, it will let you simulate having an
+"always on" connection to do a little playing around.
+<br><br>
+In order to stop the auto-dialing at boot-up, simply delete the symbolic link with the command:
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font color="#a8003b" face="courier" size="4"><b>
+rm /etc/rc2.d/S95proxy
+</b></font>
+</font></center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>You
+can also delete the dialing-related statements out of the proxy or
+firewall script if you want, but having them auto-dial for you is a
+convenience even when you do want to run the scripts manually.
+<br><br><br>
+</font><center>
+<table border="2" cellpadding="10" width="85%"><tbody><tr><td>
+<font face="arial,helvetica,sans serif" size="2">
+<center>
+<font color="red"><b>SECURITY WARNING</b></font>
+</center><br>
+Do <u>NOT</u> plan to use the system you will create using these guide pages as a "production" (real) server.  It will <u>NOT</u> be secure!
+<br><br>There are many steps involved in creating a secure Internet or
+LAN server. While we do refer to some things you can do to make your
+system more secure, there are many other measures related to system
+security that also need to be taken into consideration and they are not
+covered on these pages. <br><br>
+These guide pages are meant as a learning tool only. The knowledge
+gained on these pages will help you understand the material covered in
+security-related publications when you are ready to consider setting up
+a production server.
+</font></td></tr></tbody></table>
+</center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br><br>
+<br>
+
+
+</font><center>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"><br>
+<font size="2">
+Did you find this page helpful ?<br>
+If so, please help keep this site operating<br>
+by using our <a href="http://www.aboutdebian.com/order.htm">CD</a>, <a href="http://www.aboutdebian.com/gear.htm">gear</a>, or <a href="http://www.aboutdebian.com/books.htm">book</a> pages.
+</font>
+<br><br><br>
+<font size="1">
+Site, content, documents, original images &nbsp; Copyright © 2003-2010 &nbsp; <a href="http://www.parkansky.com/" target="_blank">Keith Parkansky</a> &nbsp; All rights reserved<br>
+Duplication of any portion of this site or the material contained herein without<br>
+the express written consent of Keith Parkansky, USA is strictly prohibited.
+<br><br>
+This site is in no way affiliated with the Debian Project, the debian.org Web site, or<br>
+Software In The Public Interest, Inc.  No endorsement of this site by the Debian Project<br>
+or Software In the Public Interest is expressed or implied.  Debian and the Debian logo<br>
+are registered trademarks of Software In The Public Interest, Inc. Linux is a registered<br>
+trademark of Linus Torvalds.  The Tux penguin graphic is the creation of Larry Ewing.
+<br><br>
+LIABILITY 
+<br><br>
+IN NO EVENT WILL <a href="http://www.parkansky.com/" target="_blank">KEITH PARKANSKY</a> OR <a href="http://www.bluehost.com/" target="_blank">BLUEHOST INCORPORATED</a>
+OR ANY OF ITS' SUBSIDIARIES BE LIABLE TO ANY PARTY (i) FOR ANY DIRECT,
+INDIRECT, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS
+INTERRUPTION, LOSS OF PROGRAMS OR INFORMATION, AND THE LIKE), OR ANY
+OTHER DAMAGES ARISING IN ANY WAY OUT OF THE AVAILABILITY, USE, RELIANCE
+ON, OR INABILITY TO USE THE INFORMATION, METHODS, HTML OR COMPUTER
+CODE, OR "KNOWLEDGE" PROVIDED ON OR THROUGH THIS WEBSITE, COMMONLY
+REFERRED TO AS THE "ABOUT DEBIAN" WEBSITE, OR ANY OF ITS' ASSOCIATED
+DOCUMENTS, DIAGRAMS, IMAGES, REPRODUCTIONS, COMPUTER EXECUTED CODE, OR
+ELECTRONICALLY STORED OR TRANSMITTED FILES OR GENERATED COMMUNICATIONS
+OR DATA EVEN IF KEITH PARKANSKY OR <a href="http://www.bluehost.com/" target="_blank">BLUEHOST INCORPORATED</a>
+OR ANY OF ITS' SUBSIDIARIES SHALL HAVE BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES, AND REGARDLESS OF THE FORM OF ACTION, WHETHER IN
+CONTRACT, TORT, OR OTHERWISE; OR (ii) FOR ANY CLAIM ATTRIBUTABLE TO
+ERRORS, OMISSIONS, OR OTHER INACCURACIES IN, OR DESTRUCTIVE PROPERTIES
+OF ANY INFORMATION, METHODS, HTML OR COMPUTER CODE, OR "KNOWLEDGE"
+PROVIDED ON OR THROUGH THIS WEBSITE, COMMONLY REFERRED TO AS THE "ABOUT
+DEBIAN" WEBSITE, OR ANY OF ITS' ASSOCIATED DOCUMENTS, DIAGRAMS, IMAGES,
+REPRODUCTIONS, COMPUTER EXECUTED CODE, OR ELECTRONICALLY STORED,
+TRANSMITTED, OR GENERATED FILES, COMMUNICATIONS, OR DATA. ALL
+INFORMATION, METHODS, HTML OR COMPUTER CODE IS PROVIDED STRICTLY "AS
+IS" WITH NO GUARANTY OF ACCURACY AND/OR COMPLETENESS. USE OF THIS SITE
+CONSTITUTES ACCEPTANCE OF ALL STATED TERMS AND CONDITIONS.
+</font>
+<br><br>
+</font></center>
+</blockquote>
+<font color="#000000" face="arial,sans serif,helvetica" size="3"></font>
+
+</body></html>

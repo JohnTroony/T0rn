@@ -1,0 +1,8 @@
+/*1298517452,176833976*/
+
+if (window.CavalryLogger) { CavalryLogger.start_js(["XHeSr"]); }
+
+var MessagingEvents=window.MessagingEvents||(function(){onloadRegister(function(){var b=0;MessagingEvents.subscribe('mark-as-read',function(){b++;var d=function(){MessagingEvents.unsubscribe(e);clearTimeout(c);b--;};var e=MessagingEvents.subscribe('read',d);var c=d.defer(60000);});var a=function(c){if(b)return;for(var d in c)MessagingEvents.inform('count/'+d,c[d]);};Arbiter.subscribe(PresenceMessage.getArbiterMessageType('messaging'),function(c,e){var f=copy_properties(e.obj);var event=f.event||'';delete f.type;delete f.event;MessagingEvents.inform(event,f);if('unread_counts' in f){var d=f.unread_counts;a({unread:d.inbox,other_unseen:d.other});}});Arbiter.subscribe(PresenceMessage.getArbiterMessageType('inbox'),function(c,d){var e=copy_properties(d.obj);delete e.type;a(e);});});return new Arbiter();})();
+add_properties('Messaging',{getUserThreadURI:function(a){return URI(env_get('www_base')).setPath('/messages/'+a);},markAsRead:function(a){a=$A(a);new AsyncRequest().setURI('/ajax/messaging/async.php').setData({action:'markRead',tids:a}).setMethod('POST').setHandler(bagofholding).setErrorHandler(bagofholding).send();MessagingEvents.inform('mark-as-read',{tids:a});},markUserThreadAsRead:function(a){new AsyncRequest().setURI('/ajax/messaging/async.php').setData({action:'chatMarkRead',other_user:a}).setMethod('POST').setHandler(bagofholding).setErrorHandler(bagofholding).send();MessagingEvents.inform('mark-as-read',{chat_ids:[a]});}});
+
+if (window.Bootloader) { Bootloader.done(["XHeSr"]); }

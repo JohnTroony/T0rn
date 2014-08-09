@@ -1,0 +1,89 @@
+/*1300138718,176832695*/
+
+.login_page .title_header{margin:0 0 10px 0;padding:0 0 10px 0}
+.login_page .login_page_spacer{height:35px}
+.login_page .title_header h2.no_icon{background:transparent none repeat scroll 0;margin:0;padding:0}
+.login_page #loginform{clear:left;margin:auto;padding:15px 0;text-align:left;width:380px}
+.login_page #signup_area{clear:left;margin:auto;width:380px}
+.login_page .signup_button{float:left}
+.login_page .fbLoginNuxTrackingPixel{display:inline;height:0;width:0}
+.login_page .signup_text{float:left;width:200px;margin:0 0 20px 10px}
+.login_page hr{width:280px;margin-left:0}
+.login_page #loginform p{line-height:16px;margin:10px 0;text-align:left}
+.login_page #loginform p.reset_password{margin-bottom:0;padding-bottom:0}
+.login_page .apinote{margin:10px auto;width:450px;background:#fff}
+.login_page .apinote h2{font-size:12px;margin-bottom:6px}
+.login_page .login_form_container .dialog_buttons{background-color:#f2f2f2;border-top:1px solid #ccc;bottom:0;left:0;margin:0;padding:8px 10px;position:absolute;right:0;text-align:right}
+.login_page .dialog_buttons .logged_in_as{float:left;width:240px;margin-top:3px;text-align:left}
+.login_page .dialog_buttons .register_link{float:left;text-align:left;margin-top:4px;font-weight:bold}
+.login_page #email{direction:ltr}
+.login_page #error{margin-top:20px}
+div.login_page_interstitial{margin-bottom:0;width:640px}
+.login_page .linear_language{margin:0 auto 40px;width:640px}
+.login_page #booklet #content{float:none;margin-bottom:46px;padding:15px 30px 20px 30px;width:auto}
+.login_page #booklet #loginform{margin-top:20px;padding-top:0}
+.login_page #booklet #dialog_buttons input{margin:0}
+.form_row{padding:0 0 8px 0;text-align:left}
+.form_row .login_form_label{display:block;float:left;padding:3px 0;width:100px}
+.form_row input{margin:0}
+.form_row .inputtext,.inputpassword{width:175px}
+.form_row .checkbox{float:left;width:15px;margin:5px 4px 2px 0}
+.persistent{color:#333;display:block;font-size:11px;font-weight:normal;line-height:16px;padding:3px 0 3px 100px}
+#buttons{padding:5px 0 0 100px;text-align:left}
+#buttons .uiButton{margin-right:2px}
+#buttons label{float:none;width:auto}
+.reset_password,.not_me_link{padding-left:100px}
+.reset_password label{float:none;font-weight:normal;width:auto}
+.reset #content{padding:20px}
+.lo_user li.objectListItem{padding-top:0;padding-bottom:0;list-style-type:none}
+.loginhelp_search_list li.objectListItem{list-style-type:none;width:400px}
+.louser_badpw li.objectListItem{list-style-type:none;width:400px}
+.loginhelp_isitme li.objectListItem{width:400px}
+.set_as_homepage_img{float:left;width:40px}
+#set_as_homepage_birthday_box{margin-top:2px;border-bottom:solid 1px #d8dfea;border-top:solid 1px #d8dfea}
+#set_as_homepage_body_birthday_box{margin-top:3px;text-align:left}
+#set_as_homepage_close_birthday_box{text-align:right}
+#set_as_homepage_newsfeed_top{margin:-12px 0 9px 0;padding:6px 0 5px 0;border-bottom:solid 1px #d8dfea}
+#set_as_homepage_body_newsfeed_top{width:340px;float:left;padding-top:4px}
+#set_as_homepage_close_newsfeed_top{float:right;padding-top:4px;text-align:right}
+#set_as_homepage_profile{width:392px;margin:0 0 4px 0;padding:0 0 8px 0;border-bottom:solid 1px #d8dfea}
+#set_as_homepage_body_profile{float:left;width:350px;padding-top:4px}
+#set_as_homepage_close_profile{text-align:right}
+#set_as_homepage_inbox{margin:13px 0 -10px 10px;width:500px}
+#set_as_homepage_body_inbox{float:left;width:400px;padding-top:4px}
+#set_as_homepage_close_inbox{padding-top:4px;float:right;text-align:right}
+.set_as_homepage_persistent{display:block;font-size:11px;font-weight:normal;line-height:16px;padding:3px 0 3px 118px}
+.no_margin{margin:0}
+#megaphone_story_227_modal .megaphone_content .icon_text{color:#666;font-size:13px;width:375px}
+#megaphone_story_227 .megaphone_story .megaphone_header{font-size:16px}
+#set_as_homepage_dialog_content{color:#666;font-size:11px}
+#set_as_homepage_dialog_content .stepsTitle{font-size:11px}
+#set_as_homepage_dialog_content .stepsList,.uiInterstitialContent .stepsList{font-size:13px;margin-top:3px}
+#set_as_homepage_dialog_content .stepsList li,.uiInterstitialContent .stepsList li{margin-top:13px}
+#set_as_homepage_dialog_content .screenshot,.uiInterstitialContent .screenshot{margin:20px auto;display:block}
+#SetAsHomepage_Promo.Firefox{width:403px}
+#SetAsHomepage_Promo.IE{margin-top:60px;margin-left:auto;margin-right:auto;width:446px}
+#SetAsHomepage_Promo h1{font-size:18px}
+#SetAsHomepage_Promo .text{font-size:16px}
+#SetAsHomepage_Promo .instructions{width:100%;background-color:#fff;border:1px solid #d5d5f5;font-size:11px}
+#SetAsHomepage_Promo .DragIcon,#SetAsHomepage_Interstitial .DragIcon,#SetAsHomepage_Callout .DragIcon{vertical-align:middle;cursor:pointer}
+#SetAsHomepage_Promo .RightSide{width:310px}
+#SetAsHomepage_Interstitial .instructions{width:100%;background-color:#eceff5;font-size:11px}
+#SetAsHomepage_Interstitial .facepile{width:100px}
+#SetAsHomepage_Interstitial .facepile a{cursor:default}
+#SetAsHomepage_Interstitial .text{font-size:11px}
+#SetAsHomepage_Callout.IE .text{width:230px}
+#SetAsHomepage_Callout .instructions{border:1px solid #b1c3da;cursor:pointer;background-color:#eceff5;font-size:11px}
+#SetAsHomepage_Callout .instructions.flashborder{border:1px solid #3b5998}
+#SetAsHomepage_Callout .instructionsText{vertical-align:middle;display:inline-block;width:200px}
+.uiInterstitial{border-radius:4px;-webkit-border-radius:4px;margin-left:auto;margin-right:auto}
+.uiInterstitialSmall{width:445px}
+.uiInterstitialLarge{width:555px}
+.uiInterstitial .interstitialHeader{border-color:#ccc;padding-bottom:.5em}
+.fullBleed .interstitialHeader{margin:0;padding:4px 12px 10px}
+.uiInterstitialContent{margin-bottom:15px}
+.fullBleed .uiInterstitialContent{margin:0;padding:0}
+.uiInterstitialBar{border-bottom-right-radius:3px;border-bottom-left-radius:3px;-webkit-border-bottom-left-radius:3px;-webkit-border-bottom-right-radius:3px;line-height:16px;padding:8px 10px}
+div.uiInterstitialWithStripes{background:transparent url(http://static.ak.fbcdn.net/rsrc.php/v1/z9/r/y7MG8IZpiC8.gif) repeat-x;padding-top:15px}
+
+#bootloader_r_gWs { height: 42px; }

@@ -1,0 +1,230 @@
+/*1300132663,169775556*/
+
+.fbChatBuddyList .subheader,.fbChatBuddyList .hide_idle_marker,.fbChatBuddyList .suppress,.fbChatBuddyList .hide_empty_item,.fbChatBuddyList .hide_friend_list,.fbChatBuddyList .hover.other_friends_list .friendlist_name .edit_link,.fbChatBuddyList.reorder_fl .friend_list_container,.fbChatBuddyList.reorder_fl .list_select .suppress,.fbChatBuddyList.reorder_fl .switch,.fbChatBuddyList .content .titletip,.fbChatBuddyList.error .content,.friend_list.offline a.friend,.fbChatBuddyList .status{display:none}
+.fbChatBuddyList a.friend em{background-color:#dce1e8;font-style:normal;font-weight:bold}
+.fbChatBuddyList a.selected em,.fbChatBuddyList .content a:hover em{background-color:#5670a6}
+.fbChatBuddyList .friendlist_name{background-color:#fff;color:#888;float:left;padding:0 5px 0 6px}
+.fbChatBuddyList span.title a,.fbChatBuddyList span.title a:hover{font-size:11px;color:#888;text-decoration:none}
+.fbChatBuddyList .friendlist_name .edit_link{display:none;font-size:9px;line-height:9px}
+.fbChatBuddyList .hover .friendlist_name .edit_link{display:-moz-inline-box;display:inline-block;padding:0 5px}
+.fbChatBuddyList a.friend{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zV/r/AA4mSyZRGOi.png) no-repeat right 8px;clear:left;padding:2px 15px 2px 10px}
+.fbChatBuddyList .compact a.friend{background-position:right 6px}
+.fbChatBuddyList a.friend span{float:left;width:130px;line-height:22px}
+.fbChatBuddyList .compact a.friend span{line-height:18px}
+.fbChatBuddyList a.friend:hover,.fbChatBuddyList a.selected{background-color:#6d84b4 !important;background-position:right -52px;border-top:1px solid #3b5998;border-bottom:1px solid #3b5998;color:#fff;padding-bottom:1px;padding-top:1px;text-decoration:none}
+.fbChatBuddyList .compact a.friend:hover,.fbChatBuddyList .compact a.selected{background-position:right -54px}
+.fbChatBuddyList a.idle{background-position:right -112px}
+.fbChatBuddyList .compact a.idle{background-position:right -114px}
+.fbChatBuddyList a.idle:hover,.fbChatBuddyList a.selected.idle{background-position:right -172px}
+.fbChatBuddyList .compact a.idle:hover,.fbChatBuddyList .compact a.selected.idle{background-position:right -174px}
+.fbChatBuddyList a.friend img{float:left;margin-right:5px}
+.fbChatBuddyList .friend_list_container{clear:both;padding:2px 0 0 0}
+.fbChatBuddyList .friend_list{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/JGCJKtGmxvq.gif) 0 10px repeat-x;padding:4px 0 0}
+.fbChatBuddyList .show_empty_list{display:block !important}
+.reorder_fl span.title a,.reorder_fl span.title a:hover{background:transparent}
+.fbChatBuddyList.reorder_fl .friendlist_name span.title{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zU/r/S3AUNB-vZXz.gif) 4px 0 no-repeat;display:block;float:left;padding:0 20px}
+.fbChatBuddyList.reorder_fl .friend_list{background:none;margin:0 5px;overflow:hidden}
+.fbChatBuddyList.reorder_fl .friend_list div.friendlist_name{background:#ededed;border-top:1px solid #d0d0d0;clear:left;color:#000;cursor:move;margin:3px 0;padding:5px 0;width:94%}
+.fbChatBuddyList.reorder_fl .friend_list div.friendlist_name span.title a{cursor:move}
+.fbChatBuddyList #reorder_fl_alert{background:#fff9d7;border-bottom:1px solid #e2c822;padding:4px 6px;text-align:center}
+.fbChatBuddyList #reorder_fl_alert span{display:block;text-align:left}
+.fbChatBuddyList #reorder_fl_alert input{margin:4px auto 0 auto}
+.fbChatBuddyList #error_fl_alert{background:#fff9d7;border-bottom:1px solid #e2c822;padding:4px 6px;text-align:center}
+.fbChatBuddyList #error_fl_alert span{display:block;text-align:left}
+.fbChatBuddyList #error_fl_alert input{margin:4px auto 0 auto}
+.fbChatBuddyList .switch{background-color:#fff;display:block;padding:3px 6px;float:right;position:relative}
+.fbChatBuddyList .switch a{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zV/r/IJYgcESal33.png);background-repeat:no-repeat;background-position:-663px -101px;cursor:pointer;display:block;height:8px;width:17px;padding:0;text-decoration:none}
+.fbChatBuddyList .switch a:hover{background-position:-663px -109px}
+.fbChatBuddyList .switch a:active{background-position:-680px -101px}
+.fbChatBuddyList .offline .switch a{background-position:-680px -109px}
+.fbChatBuddyList .offline .switch a:hover{background-position:-697px -101px}
+.fbChatBuddyList .offline .switch a:active{background-position:-697px -109px}
+.fbChatBuddyList .drag{left:0 !important;right:0;z-index:1}
+.fbChatBuddyList .content .hover .switch a:hover .titletip{display:block}
+.fbChatBuddyList .content .titletip{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zR/r/kPCE0g_tKJs.gif) no-repeat right 5px;top:-3px;bottom:auto;right:26px;padding-right:5px;padding-bottom:4px;position:absolute;z-index:20}
+.fbChatBuddyList .content .titletip a{color:#fff;text-decoration:underline}
+.fbChatBuddyList .content .titletip strong{background:#282828;color:#fff;display:block;font-weight:normal;padding:3px 8px;text-align:center;white-space:nowrap}
+.fbChatBuddyList .content .accessibility_tip{position:absolute;top:-999px;opacity:0;width:0;height:0;overflow:hidden}
+.fbChatBuddyList.error .status{display:block}
+.fbChatBuddyList .info_text{color:#666;padding:6px 8px}
+.fbChatBuddyListDropdown .fbChatBuddyListDropdownButton,.fbChatBuddyListDropdown .fbChatBuddyListDropdownButton:active,.fbChatBuddyListDropdown .fbChatBuddyListDropdownButton:focus,.fbChatBuddyListDropdown .fbChatBuddyListDropdownButton:hover{background-image:none !important;border:0 !important;border-right:1px solid #999 !important;padding-right:6px !important}
+.Locale_ca_ES .fbChatBuddyListDropdownButton span,.Locale_da_DK .fbChatBuddyListDropdownButton span,.Locale_es_LA .fbChatBuddyListDropdownButton span,.Locale_es_ES .fbChatBuddyListDropdownButton span,.Locale_ru_RU .fbChatBuddyListDropdownButton span,.Locale_sk_SK .fbChatBuddyListDropdownButton span,.Locale_sl_SI .fbChatBuddyListDropdownButton span,.Locale_vi_VN .fbChatBuddyListDropdownButton span,.Locale_tr_TR .fbChatBuddyListDropdownButton span,.Locale_el_GR .fbChatBuddyListDropdownButton span,.Locale_bg_BG .fbChatBuddyListDropdownButton span,.Locale_mk_MK .fbChatBuddyListDropdownButton span,.Locale_sr_RS .fbChatBuddyListDropdownButton span{font-size:10px}
+.Locale_cy_GB .fbChatBuddyListDropdownButton span,.Locale_hu_HU .fbChatBuddyListDropdownButton span{font-size:9px}
+.Locale_tl_PH .fbChatBuddyListDropdownButton span{font-size:9px;font-weight:normal}
+.fbChatBuddyListFriendListsDropdown .nameInput{width:100%}
+.fbChatBuddyListOptionsDropdown .uiMenuItem .itemLabel{font-weight:normal;white-space:normal;width:140px}
+.fbChatBuddyListOptionsDropdown .uiMenu .disabled{display:none}
+.fbChatBuddyListOptionsDropdown .uiMenuItem .img{display:inline-block;height:11px;margin:0 5px 0 -16px;width:11px}
+.fbChatBuddyListOptionsDropdown .async_saving a,.fbChatBuddyListOptionsDropdown .async_saving a:active,.fbChatBuddyListOptionsDropdown .async_saving a:focus,.fbChatBuddyListOptionsDropdown .async_saving a:hover{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zb/r/GsNJNwuI-UM.gif);background-position:1px 5px;background-repeat:no-repeat}
+.fbChatBuddyListOptionsDropdown .offline .img{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zV/r/Y4igKx3JtVB.png);background-repeat:no-repeat;background-position:-11px -984px}
+.fbChatBuddyListOptionsDropdown .reorder .img{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zV/r/Y4igKx3JtVB.png);background-repeat:no-repeat;background-position:-11px -996px}
+.fbChatBuddyListOptionsDropdown .popout .img{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zV/r/Y4igKx3JtVB.png);background-repeat:no-repeat;background-position:-11px -1008px}
+.fbChatBuddyListPanel{background-color:#ededed;border-bottom:1px solid #808080}
+.fbChatBuddyListTypeahead{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zR/r/uPeIk2QJKJJ.png);background-repeat:no-repeat;background-position:left -3px;background-color:#fff;padding:4px 4px 4px 21px;position:relative}
+.fbChatBuddyListTypeahead input{border:0;outline:none;padding:0 !important;width:100%}
+.fbChatBuddyListTypeahead .clear-input{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zg/r/kGTPoOeMMEY.png);background-repeat:no-repeat;cursor:pointer;height:17px;margin-top:-9px;position:absolute;right:4px;top:50%;width:17px}
+.fbChatBuddyListTypeahead .clear-input:hover{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zK/r/rkaWFmcjPuY.png);background-repeat:no-repeat}
+.fbChatConvItem .metaInfoContainer{visibility:hidden}
+.fbChatConvItem:hover .metaInfoContainer{visibility:visible}
+.fbChatMessageGroup{border-top:1px solid #eee;position:relative}
+.fbChatMessageGroup .profileLink{float:left}
+.fbChatMessageGroup .profileLink .img{display:block;height:32px;width:32px}
+.fbChatMessageGroup .messages{margin-left:40px}
+.fbChatMessage{margin-bottom:3px;white-space:pre-wrap;word-wrap:break-word}
+.fbChatMessage.cyphertext{color:#999;font-size:9px;line-height:11px}
+.fbChatMessage .attachment{margin-top:3px}
+.fbChatMessage .more{display:inline-block}
+.fbChatTabMax{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:-34px -120px;display:inline-block;height:15px;width:15px}
+.fbChatTabMax:focus,.fbChatTabMax:hover{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:-18px -120px}
+.fbChatTabMax:active{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:-50px -120px}
+.fbChatTabMax input{cursor:pointer;opacity:0;outline:none;padding:7px}
+.fbChatTab .name{white-space:nowrap}
+.fbChatTab .name a,.fbChatTab .name a:hover{color:#333;text-decoration:none}
+.highlight .fbChatTab .name a,.highlight .fbChatTab .name a:hover{color:#fff}
+a .fbChatTab .funhouse{display:none}
+a:hover .fbChatTab .funhouse{display:block}
+.fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right -60px;padding-right:11px}
+.highlight .fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right -75px}
+.disabled .fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right -15px}
+.disabled.highlight .fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right -45px}
+.idle .fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right -30px}
+.idle.highlight .fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right -90px}
+.typing .fbChatUserTab .wrap{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:right 0;padding-right:15px}
+.show_on_presence_error,.show_on_popped_out,.presence_error .hide_on_presence_error,.popped_out .hide_on_popped_out{display:none}
+.presence_error .show_on_presence_error,.popped_out .show_on_popped_out{display:block}
+.fbDockChatBuddyListNub{width:201px}
+.popped_out .fbDockChatBuddyListNub,.presence_error .fbDockChatBuddyListNub{display:none}
+.fbDockChatBuddyListNub .fbNubFlyout{width:202px}
+.fbDockChatBuddyListNub.menuOpened .fbNubFlyoutTitlebar{border-bottom:1px solid #777;padding-bottom:2px}
+.fbDockChatBuddyListNub .icon{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/za/r/3HjfDY8tjji.gif);background-repeat:no-repeat;float:left;height:10px;margin:3px 4px 0 0;width:16px}
+.offline .fbDockChatBuddyListNub .icon{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zm/r/usi_OdNFv_D.gif);background-repeat:no-repeat}
+.fbDockChatBuddyListNub .label .count{color:#777}
+.fbDockChatBuddyListNub .label .count strong{color:#333}
+.fbDockChatBuddyListNub .throbber{margin-top:1px;vertical-align:top}
+.fbDockChatBuddyListNub .fbChatBuddyListTypeahead{border-top:1px solid #93a2c1}
+.fbDockChatBuddyListNub .fbChatBuddyListTypeahead input{line-height:14px}
+.fbDockChatTab{width:150px}
+.fbDockChatTab.highlight{z-index:101}
+.fbDockChatTab.highlight .fbNubButton{background:#6d84b4 url(http://static.ak.fbcdn.net/rsrc.php/v1/zq/r/hjN1fTOtVAm.png) repeat-x !important;border-color:#283b8a;color:#fff !important}
+.no-titan .fbDockChatTab.disabled .fbNubButton{background-color:#d8d8d8;color:#555}
+.fbDockChatTab .fbChatTab{padding-top:1px}
+.fbDockChatTab .fbChatTab .name{overflow:hidden;text-overflow:ellipsis}
+.fbDockChatTab .numMessages{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:0 -120px;color:#fff;font-size:9px;font-weight:bold;height:16px;padding-top:1px;position:absolute;right:12px;text-align:center;top:-8px;width:17px}
+.fbDockChatTab .fbDockChatTabFlyout{width:260px}
+.no-titan .fbDockChatTab.disabled .conversationContainer{background-color:#f7f7f7}
+.fbDockChatTab .inputContainer{border-top:1px solid #93a2c1;position:relative}
+.fbDockChatTab .input{border:0;display:block;height:0;margin:0;min-height:14px;outline:none;overflow:auto;overflow-x:hidden;padding:4px 4px 4px 24px;resize:none;width:230px !important}
+.no-titan .fbDockChatTab.disabled .input{background-color:#e4e4e4;color:#888}
+.fbDockChatTab .input.shadow{height:0;left:0;overflow:hidden;position:fixed;top:-99999px}
+.fbDockChatTab .inputIcon{left:0;position:absolute;top:0}
+.fbDockChatTab.openToggler .funhouse{display:block}
+.fbDockChatTab .funhouse .maximize,.fbDockChatTab .funhouse .close{vertical-align:top}
+.fbDockChatTab .titlebarLinkWrapper{max-width:250px;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom;white-space:nowrap}
+.fbDockChatTab .titlebarLink{color:#fff}
+.fbDockChatTab .titlebarCallLink{color:#b2bed7;display:none;font-weight:normal;line-height:14px;margin:-3px -3px -3px 3px;padding:3px 5px}
+.fbDockChatTab .titlebarCallLink:hover{background-color:#93a2c1;color:#fff;text-decoration:none}
+.videoCallEnabled .fbDockChatTab .titlebarCallLink{display:block}
+.videoCallEnabled .fbDockChatTab.disabled .titlebarCallLink{display:none}
+.fbDockChatTab .titlebarCallLink .img{background-color:#6d84b4;margin:0 3px 1px 0;opacity:.5;vertical-align:bottom}
+.fbDockChatTab .titlebarCallLink:hover .img{background-color:#93a2c1;opacity:1}
+.fbDockChatTab .fbChatMessageGroup .metaInfoContainer{background-color:#fff;position:absolute;right:0;top:-6px}
+.no-titan .fbDockChatTab.disabled .fbChatMessageGroup .metaInfoContainer{background-color:#f7f7f7}
+.fbDockChatTab.group .facepileHolder{background-color:#ededed}
+.fbDockChatTab.group .fbNubButton .name{max-width:136px}
+.fbDockChatTab.group .fbNubButton:hover .name,.fbDockChatTab.group.openToggler .fbNubButton .name{max-width:103px}
+.fbDockChatTab .fbChatUserTab .name{max-width:125px}
+.fbDockChatTab.typing .fbChatUserTab .name{max-width:123px}
+.fbDockChatTab .fbNubButton:hover .fbChatUserTab .name,.fbDockChatTab.openToggler .fbNubButton .fbChatUserTab .name{max-width:92px}
+.fbDockChatTab.typing .fbNubButton:hover .fbChatUserTab .name,.fbDockChatTab.openToggler.typing .fbNubButton .fbChatUserTab .name{max-width:90px}
+#fbDockChatTabSlider .arrow{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zR/r/uPeIk2QJKJJ.png);background-repeat:no-repeat;background-position:-41px -27px;width:4px;height:8px;margin:4px 2px 0 0;float:left}
+#fbDockChatTabSlider .previous .arrow{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zR/r/uPeIk2QJKJJ.png);background-repeat:no-repeat;background-position:-51px -27px}
+#fbDockChatTabSlider .next.disabled .arrow{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zR/r/uPeIk2QJKJJ.png);background-repeat:no-repeat;background-position:-46px -27px}
+#fbDockChatTabSlider .previous.disabled .arrow{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zR/r/uPeIk2QJKJJ.png);background-repeat:no-repeat;background-position:-36px -27px}
+.no-titan #fbDockChatTabSlider .disabled a.fbNubButton:hover{background-color:#d8d8d8}
+#fbDockChatTabSlider .numTabs{margin:1px 5px;float:left}
+.no-titan #fbDockChatTabSlider .disabled .numTabs{color:#999}
+#fbDockChatTabs{position:static}
+#fbDockChatTabsWrapper{height:25px}
+#fbDockChatTabSlider .numMessages{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v1/zH/r/GpmQnU436tF.png);background-repeat:no-repeat;background-position:0 -120px;color:#fff;font-size:9px;font-weight:bold;height:16px;padding-top:1px;position:absolute;text-align:center;top:-8px;width:17px}
+#fbDockChatTabSlider .next .numMessages{right:2px}
+#fbDockChatTabSlider .previous .numMessages{right:6px}
+.fbNub{top:-1px}
+.fbNub,.fbNubGroup{float:left;position:relative}
+.fbNubButton{border-color:#999;border-style:solid;border-width:1px 0 0 1px;color:#333;display:block;height:16px;font-weight:bold;padding:4px 5px;position:relative;z-index:1}
+.fbNubButton:hover{background:#fff;text-decoration:none}
+.openToggler .fbNubButton{background:#fff;border-color:#777;border-right-width:1px;border-top-width:0;margin-right:-1px;padding:5px}
+.openToggler .fbNubButton .rule{border-top:1px solid #ccc;margin-top:-5px;padding-top:4px;position:relative}
+.fbNubFlyout{background-color:#fff;border-bottom:1px solid #777;bottom:25px;position:absolute}
+.lNubContainer .fbNubFlyout,.rNubContainer .fbNub .swapDirection{left:0;right:auto}
+.rNubContainer .fbNubFlyout,.lNubContainer .fbNub .swapDirection{left:auto;right:-1px}
+.fbNub .noTitlebar{border-top:1px solid #777}
+.fbNubFlyoutTitlebar{background-color:#6d84b4;border:1px solid #254588;border-bottom:0;color:#fff;cursor:pointer;font-size:11px;font-weight:bold;line-height:14px;padding:3px 3px 3px 5px}
+.fbNubFlyoutHeader,.fbNubFlyoutBody,.fbNubFlyoutFooter{border-color:#777;border-style:solid;border-width:0 1px}
+.fbNubFlyoutBody{overflow-x:hidden;overflow-y:auto}
+.menuOpened .fbNubFlyoutTitlebar{background-color:#f2f2f2;border-color:#777;color:#333}
+.fbNub .fbNubButton .UIImageBlock_Content{float:left;width:auto}
+.fbNub .fbNubButton .spritemap_icons{display:block}
+.fbDockWrapper{bottom:0;direction:ltr;height:25px;left:0;position:fixed;right:0;z-index:300}
+.fbDockWrapperTop{bottom:auto;top:0}
+.fbDockWrapperLeft{right:auto}
+.fbDockWrapperRight{left:auto}
+.fbDock{margin:0 15px}
+.fbDock .lNubContainer{float:left}
+.fbDock .rNubContainer{float:right}
+.fbDock,.fbDockWrapperLeft .lNubContainer,.fbDockWrapperRight .rNubContainer{background:#f4f4f4 url(http://static.ak.fbcdn.net/rsrc.php/v1/zY/r/zR5rPVu7Dbe.png) 0 0 repeat-x;border-color:#999;border-style:solid;border-width:1px 1px 0 0}
+.fbDockWrapperLeft .fbDock,.fbDockWrapperRight .fbDock{background:none;border:0 none}
+.emote_text{display:none}
+.emote_img,.emote_custom{height:16px;vertical-align:top;width:16px}
+.emote_img{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zC/r/eKCEtE1PXyK.png) no-repeat;overflow:hidden}
+#jewelBoxMail li a{display:block;overflow:hidden;padding:4px 8px;text-overflow:ellipsis;white-space:nowrap}
+#jewelBoxMail .content{display:block;width:auto}
+#jewelBoxMail .author{color:#3b5998;font-weight:bold;padding-top:2px;white-space:normal}
+#jewelBoxMail .preview{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#jewelBoxMail .subject{color:#333}
+#jewelBoxMail .time{color:#9d9d9d;font-size:9px}
+.creditsBalanceIcon{margin-bottom:-3px}
+.negativeBalance{color:#f03d25}
+.needsRepayment .getMore{display:none}
+.repay{display:none}
+.needsRepayment .repay{display:inline}
+.commerceMarketingBar .linkMargin{margin-left:2px}
+.fbRequestList .async_saving{position:relative}
+.fbRequestList .loadingIndicator{display:none;top:50%;left:50%;margin:-5px 0 0 -8px;position:absolute}
+.fbRequestList .async_saving .loadingIndicator{display:block}
+.fbRequestList .async_saving .uiButton{visibility:hidden}
+#so_sound_player{left:0;position:absolute;top:0;z-index:1000}
+#sound_player_holder{position:absolute}
+.uiSelectorBottomUp .openToggler .uiSelectorButton,.uiSelectorBottomUp .openToggler .uiSelectorButton:active,.uiSelectorBottomUp .openToggler .uiSelectorButton:focus,.uiSelectorBottomUp .openToggler .uiSelectorButton:hover,.uiSelectorBottomUp .openToggler .uiButtonSuppressed,.uiSelectorBottomUp .openToggler .uiButtonSuppressed:active,.uiSelectorBottomUp .openToggler .uiButtonSuppressed:focus,.uiSelectorBottomUp .openToggler .uiButtonSuppressed:hover{border:1px solid #3b5998;border-top-color:#6d84b4}
+.uiSelectorBottomUp .uiSelectorMenuWrapper{bottom:100%;margin-bottom:-2px;top:auto}
+.objectListItem{padding-bottom:8px;padding-top:8px}
+.passive .objectListItem{color:#808080}
+.objectListItem .auxiliary{text-align:right}
+.uiSideNav .divider{border-bottom:1px solid #ededed;border-top:1px solid #ededed;height:1px;left:auto;display:none;padding-left:0;margin-bottom:1px;width:179px;font-size:1px;line-height:1px;overflow:hidden}
+.editMode .uiSideNav .hidden,.expandedMode .uiSideNav .hidden,.expandedMode .uiSideNav .divider{display:block}
+.navMoreLess{line-height:12px;padding:3px 8px 4px 28px}
+.navMoreLessCount{margin:0}
+.navMoreText{display:block;width:100%}
+.navMoreTextWithCount{width:75% !important}
+.navMore .moreArrow{display:inline;position:absolute;margin:6px 0 0 2px}
+.navMore:hover .moreArrow{text-decoration:none}
+.navMore i{position:absolute}
+.navMore:hover i{text-decoration:none}
+.navLess{line-height:12px}
+div.navLess,.expandedMode .navMore{display:none}
+.expandedMode .navLess{display:block}
+.uiSideNavCountSprited{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zk/r/BwKwOpPWbGZ.png) no-repeat 0 -13px;color:#3b5998;display:inline-block;font-size:9px;line-height:13px;padding-left:3px}
+.uiSideNavCountSprited span.countValue{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zk/r/BwKwOpPWbGZ.png) no-repeat right 0;color:#3b5998;display:inline-block;line-height:13px;padding:0 4px 1px 1px;font-weight:bold}
+.uiSideNav .selectedItem .subitem:hover .uiSideNavCountSprited{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zk/r/BwKwOpPWbGZ.png) no-repeat 0 -13px}
+.uiSideNav .selectedItem .subitem:hover .uiSideNavCountSprited span.countValue{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zk/r/BwKwOpPWbGZ.png) no-repeat right 0;color:#3b5998;text-decoration:none}
+.uiSideNav .selectedItem a:hover .uiSideNavCountSprited{background-image:none}
+.uiSideNav .selectedItem a:hover .uiSideNavCountSprited span.countValue{background:none;color:#3b5998}
+.uiSideNavCount{background-color:#d8dfea;color:#3b5998;font-weight:bold;left:-1px;padding:0 4px;position:relative;-webkit-border-radius:2px}
+.uiSideNav .selectedItem .subitem:hover .uiSideNavCount{background-color:#d8dfea;color:#3b5998}
+.uiSideNav .selectedItem a:hover .uiSideNavCount{background-color:transparent;color:#3b5998;text-decoration:none}
+.uiSideNavCount .countValue{color:#3b5998}
+.uiSideNav .dark-grey-float-right{color:#333;font-weight:bold;float:right;padding:0}
+.uiSideNav span.blue-bubble-float-right{float:right}
+.actionLinks span.blue-bubble-float-right{float:right;margin-right:4px}
+.uiSideNav .loading .dark-grey-float-right,.uiSideNav .loading .blue-bubble-float-right{display:none}
+
+#bootloader_wxPst { height: 42px; }

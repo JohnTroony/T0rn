@@ -1,0 +1,20 @@
+/*1300135225,169775812*/
+
+.navIdentity{min-height:38px;border-bottom:1px solid #e0e0e0;margin:5px;padding-bottom:5px}
+#navAccount ul .navIdentityPic{float:left}
+#navAccount ul .navIdentityPic img{width:28px}
+#navAccount ul .navIdentityPic a{padding:5px}
+#navAccount ul .navIdentityPic a:hover{padding:4px 5px 4px 5px}
+#navAccount ul .navIdentitySub input{font-size:9px}
+#navAccount ul .navIdentityLinks{margin:5px;float:left}
+#wall_section_header .uiSelectorButton,#wall_section_header .uiSelectorButton:active,#wall_section_header .uiSelectorButton:focus,#wall_section_header .uiSelectorButton:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v1/zD/r/B4K_BWwP7P5.png) right -244px;background-color:transparent;border:none;box-shadow:none;-webkit-box-shadow:none;margin:0;outline:0;padding:0 20px 2px 0}
+#wall_section_header .uiHeaderActions,#wall_section_header .uiSelectorButton .uiButtonText{color:#333;padding:0}
+#wall_section_header .uiSelectorButton:hover .uiButtonText{text-decoration:underline}
+#wall_section_header .openToggler .uiSelectorButton:hover .uiButtonText{text-decoration:none}
+.placePageStats{margin:0 6px 5px;overflow:hidden}
+.placePageStatsNumber{font-family:Helvetica,Arial,default;font-size:18px;font-weight:bold}
+.placePageHereNowContent{margin-top:10px;overflow:hidden}
+.placeVisitorsFacepile{margin:2px 6px 14px 6px}
+.uiNumberGiant{font-family:arial, helvetica}
+
+#bootloader_FMEHA { height: 42px; }
