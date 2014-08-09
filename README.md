@@ -13,7 +13,7 @@ If it's not the targeted user, redirect to the random html page.
 I'll include a detailed user guide of the scripts later, but if you understand PHP go ahead and
 have some fun :)  
 
-P.S. > you are not limited to Facebook only! Clone any website you want and be creative *wink*
+P.S. > you are not limited to Facebook only! Clone any website you want and be creative ;) wink!
 
 Check a live hosted sample in the url below:
 
