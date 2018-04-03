@@ -4,7 +4,7 @@
 
 //confirm the link contains the right id and open the webpage saved as main.jpg
 $id = $_GET["code"];
-if ($id == "Transformers-4_age_of_extinction") {
+if ($id == "Black_Panther") {
       $myFile = "main.jpg";
       $fh = fopen($myFile, 'r');
       $theData = fread($fh, 500000);

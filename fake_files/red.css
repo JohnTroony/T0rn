@@ -1,0 +1,118 @@
+/*--------------------------------- LINKS / CODE ----------------------------------------*/
+a {
+color:#222;
+transition: color 0.2s linear 0s;
+/* Firefox 4 */
+-moz-transition: color 0.2s linear 0s;
+/* Safari and Chrome */
+-webkit-transition: color 0.2s linear 0s;
+/* Opera */
+-o-transition: color 0.2s linear 0s;
+}
+a:hover,em,code, h1.title, .mod-clean1 h3, .mod-clean1 span.title {
+color:#9D0A0E;
+text-shadow:none;
+
+}
+span.ico {
+background: none repeat scroll 0 0 #9D0A0E;
+}
+
+span.ico:hover { color: #fff; transform: rotate(360deg); }
+
+.tp-caption.big_color{
+background-color:#9D0A0E;	
+/*letter-spacing: -1.5px;	*/									
+}
+.latestItemTagsBlock ul.latestItemTags li a, .userItemTagsBlock ul.userItemTags li a, .catItemTagsBlock ul.catItemTags li a, .itemTagsBlock ul.itemTags li a {
+    background:#9D0A0E;
+text-shadow:none;
+
+}
+#search {
+	background: url(../../images/search-bg-red.png) no-repeat right ;
+}
+
+/*--------------------------------- TOOLBAR ----------------------------------------*/
+
+.jp-toolbar-outer.jphide {opacity:0;}
+
+
+/*--------------------------------- BUTTON ----------------------------------------*/
+button, a.button-default,a.button-primary, a.button-small {
+background-color:#9D0A0E;
+color:#fff!important;
+padding:6px 10px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+text-shadow:none;
+}
+
+
+a.button-default:hover,a.button-primary:hover, a.button-small:hover {
+background-color:#6e6e6e;
+color:#fff!important;
+}
+/*--------------------------------- MODULE ----------------------------------------*/
+.mod-clean3 h3 {
+background:#9D0A0E;
+color:#FFF;
+padding:8px 15px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+
+}
+.mod-border-left {
+border-left:4px solid #9D0A0E!important;
+}
+.mod-border-top {
+border-top:4px solid #9D0A0E!important;
+}
+.mod-border-right {
+border-right:4px solid #9D0A0E!important;
+}
+.mod-border-bottom {
+border-bottom:4px solid #9D0A0E!important;
+}
+
+.mod-color {
+background-color:#9D0A0E!important;
+color:#FFF;
+}
+.mod-color a:link,.mod-color a:visited {
+color:#fff;
+}
+
+.mod-color a:hover {
+text-decoration:underline;
+}
+
+.mod-color h1,.mod-color h2,.mod-color h3,.mod-color h4,.mod-color h5,.mod-color h6 {
+color:#fff;
+}
+
+.mod-color h3 {
+color:#FFF;
+padding:8px 0;
+}
+.mod-color span.color {
+color:#fff;
+}
+.mod-color button {
+color:#f1715e!important;
+background-color:#FFFFFF;
+}
+
+/*--------------------------------------------- MENU -------------------------------------------------------*/
+.menu-dropdown li.active .level1 {
+background-color:#9D0A0E;
+}
+.menu-dropdown a.level2:hover,
+.menu-dropdown a.level3:hover,
+.menu-sidebar a:hover > span,
+.menu-sidebar span:hover > span {
+color:#9D0A0E;
+}
+

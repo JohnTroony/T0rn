@@ -1,0 +1,37 @@
+/* Media Queries for custom slider */
+@media screen and (max-width: 1000px) {
+
+	.jpslitslider .sl-slider-wrapper {
+		height: 500px;
+		max-height:500px;
+	}
+
+	.text-container, .jpslitslider .title,
+	.bcktoTop {
+		font-size: 12px!important;
+	}
+
+	.jpslitslider .sl-slider p {
+		font-size: 12px!important;
+
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+
+	.jpslitslider .sl-slider-wrapper {
+		height: 400px;
+		max-height:400px;
+	}
+
+	.text-container, .title {
+		font-size: 12px!important;
+	}
+
+	.jpslitslider .sl-slider p {
+		font-size: 12px!important;
+
+	}
+
+}

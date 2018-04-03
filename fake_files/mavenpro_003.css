@@ -1,0 +1,12 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@font-face {
+	font-family: 'MavenProRegular';
+	src: url('maven_pro_regular-webfont.eot');
+	src: url('maven_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('maven_pro_regular-webfont.woff') format('woff'),
+		 url('maven_pro_regular-webfont.ttf') format('truetype'),
+		 url('maven_pro_regular-webfont.svg#MavenProRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

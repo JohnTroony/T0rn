@@ -1,0 +1,105 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/menus.css);
+
+
+/* Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Level 1 */
+.menu-dropdown { margin-bottom: -10px; }
+
+.menu-dropdown li.level1 {
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 {
+	border: 1px solid #DDD;
+	color: #444;
+}
+
+/* Set Active */
+.menu-dropdown li.active .level1 { color: #48b; }
+
+/* Set Hover */
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1 { color: #d50; }
+
+/* Drop-Down */
+.menu-dropdown .dropdown {
+	top: 42px;
+	border-top: 1px solid #DDD;
+}
+
+.menu-dropdown .dropdown-bg > div {
+	padding: 0 5px;
+	border: 1px solid #ddd;
+	border-top: none;
+	background: #fff;
+}
+
+/* Level 2 */
+.menu-dropdown li.level2 { 
+	margin: 0 5px;
+	border-top: 1px solid #ddd;
+}
+.menu-dropdown li.level2:first-child { border: none; }
+
+.menu-dropdown a.level2,
+.menu-dropdown span.level2 { color: #444; }
+
+/* Set Hover */
+.menu-dropdown a.level2:hover { color: #d50; }
+
+/* Set Current */
+.menu-dropdown a.current.level2 { font-weight: bold; } 
+
+/* Set Hover */
+.menu-dropdown a.level3:hover { color: #d50; }
+
+/* Set Current */
+.menu-dropdown a.current.level3 { font-weight: bold; } 
+
+
+/* Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span { color: #444; }
+
+/* Hover */
+.menu-sidebar a:hover,
+.menu-sidebar li > span:hover { color: #d50; }
+
+/* Current */
+.menu-sidebar a.current { font-weight: bold; }
+
+/* Level 1 */
+.menu-sidebar li.level1 { border-top: 1px solid #ddd; }
+.menu-sidebar li.level1:first-child { border-top: none; }
+
+.menu-sidebar li.parent .level1 > span { background: url(../images/menu_sidebar_parent.png) 100% 0 no-repeat; }
+.menu-sidebar li.parent.active .level1 > span { background-position: 100% -30px; }
+
+/* Level 2-4 */
+.menu-sidebar ul.level2 ul { padding-left: 10px; }
+
+
+/* Line Menu
+----------------------------------------------------------------------------------------------------*/
+
+.menu-line li {
+	margin-left: 7px;
+	padding-left: 8px;
+	background: url(../images/menu_line_item.png) 0 50% no-repeat;
+}
+
+.menu-line li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	background: none;
+}
+

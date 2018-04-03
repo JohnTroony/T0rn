@@ -1,0 +1,9 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 { font-family: "MavenProRegular"; text-transform:uppercase }
+
+.menu-dropdown span.subtitle {
+    font-size:11px;
+	text-transform:none
+}

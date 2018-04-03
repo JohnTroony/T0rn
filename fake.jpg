@@ -1,653 +1,1352 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" dir="ltr" style="" class=" js no-touch csstransforms3d csstransitions" lang="en-gb"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script id="facebook-jssdk" src="fake_files/all.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- base href="https://www.cipit.org/index.php/blog/intellectual-property/projects" -->
+	<meta name="keywords" content="copyright,strathmore,intellectual property,it,ict,trademarks,ict policy,policy,kenya,nairobi,patents,ip case law,cipit,Strathmore Law School,">
+	<meta name="rights" content="Copyright The center for Intellectual Property and Information Technology Law,Intellectual Property and Information Technology Law">
+	<meta name="author" content="Administrator ">
+	<meta name="description" content="The Centre for Intellectual Property and Information Technology Law (CIPIT) is a part of Strathmore Law School, and is an innovative Centre for evidence-based research and training in intellectual property and information technology law and policy.">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Centre for Intellectual Property and Information Technology law - IP Projects</title>
+	<link href="https://www.cipit.org/templates/jp-hope/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="fake_files/k2_002.css" type="text/css">
+	<link rel="stylesheet" href="fake_files/k2.css" type="text/css">
+	<link rel="stylesheet" href="fake_files/widgetkit-4f0b2492.css" type="text/css">
+	<link rel="stylesheet" href="fake_files/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="fake_files/slitslider.css" type="text/css">
+	<link rel="stylesheet" href="fake_files/responsive.css" type="text/css">
+	<link rel="stylesheet" href="fake_files/custom.css" type="text/css">
+	<script src="fake_files/jquery_002.js" type="text/javascript"></script>
+	<script src="fake_files/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="fake_files/jquery-migrate.js" type="text/javascript"></script>
+	<script src="fake_files/k2.js" type="text/javascript"></script>
+	<script src="fake_files/widgetkit-a67ca9a4.js" type="text/javascript"></script>
+	<script src="fake_files/modernizr.js" type="text/javascript"></script>
+	<script src="fake_files/jquery.js" type="text/javascript"></script>
+	<script src="fake_files/jquery_003.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery( document ).ready(function( $ ) {
+$(function() {
+var Page = (function() {
+var $navArrows = $( '#nav-arrows' ),
+$nav = $( '#nav-dots > span' ),
+slitslider = $( '#slider' ).slitslider( {
+onBeforeChange : function( slide, pos ) {
+$nav.removeClass( 'nav-dot-current' );
+$nav.eq( pos ).addClass( 'nav-dot-current' );
+},
+autoplay: false ,
+interval: 4000  ,
+speed: 800
+} ),
+init = function() {
+initEvents();
+},
+initEvents = function() {
+$navArrows.children( ':last' ).on( 'click', function() {
+slitslider.next();
+return false;
+} );
+$navArrows.children( ':first' ).on( 'click', function() {
+slitslider.previous();
+return false;
+} );
+$nav.each( function( i ) {
+$( this ).on( 'click', function( event ) {
+var $dot = $( this );
+if( !slitslider.isActive() ) {
+$nav.removeClass( 'nav-dot-current' );
+$dot.addClass( 'nav-dot-current' );
+}
+slitslider.jump( i + 1 );
+return false;
+} );
+} );
+};
+return { init : init };
+})();
+Page.init();
+});
+});
+
+	</script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<link rel="apple-touch-icon-precomposed" href="https://www.cipit.org/templates/jp-hope/apple_touch_icon.png">
+<link rel="stylesheet" href="fake_files/base.css">
+<link rel="stylesheet" href="fake_files/layout.css">
+<link rel="stylesheet" href="fake_files/menus.css">
+<style>.wrapper { max-width: 1080px; }
+.jp-main-outer { max-width: 1080px; }
+.menu-outer { max-width: 1080px; }
+body { font-size: 14px; }
+.menu-dropdown a.level1,.menu-dropdown span.level1 { font-size: 13px; }
+#logo{ height: 120px;}
+.padding-top{ padding-top: 120px;}
+#sidebar-a { width: 30%; }
+#maininner { width: 70%; }
+#menu .dropdown { width: 250px; }
+#menu .columns2 { width: 500px; }
+#menu .columns3 { width: 750px; }
+#menu .columns4 { width: 1000px; }</style>
+<link rel="stylesheet" href="fake_files/modules.css">
+<link rel="stylesheet" href="fake_files/tools.css">
+<link rel="stylesheet" href="fake_files/system.css">
+<link rel="stylesheet" href="fake_files/extensions.css">
+<link rel="stylesheet" href="fake_files/style.css">
+<link rel="stylesheet" href="fake_files/font-awesome.css">
+<link rel="stylesheet" href="fake_files/joomlaplates.css">
+<link rel="stylesheet" href="fake_files/red.css">
+<link rel="stylesheet" href="fake_files/mavenpro_002.css">
+<link rel="stylesheet" href="fake_files/quicksand_002.css">
+<link rel="stylesheet" href="fake_files/mavenpro.css">
+<link rel="stylesheet" href="fake_files/responsive_002.css">
+<link rel="stylesheet" href="fake_files/print.css">
+<link rel="stylesheet" href="fake_files/custom_002.css">
+<link rel="stylesheet" href="fake_files/mavenpro_003.css">
+<link rel="stylesheet" href="fake_files/quicksand.css">
+<script src="fake_files/warp.js"></script>
+<script src="fake_files/responsive.js"></script>
+<script src="fake_files/accordionmenu.js"></script>
+<script src="fake_files/dropdownmenu.js"></script>
+<script src="fake_files/template.js"></script>
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style></head>
+
+<body id="page" class="page sidebar-a-right sidebars-1  isblog " data-config="{&quot;twitter&quot;:1,&quot;plusone&quot;:0,&quot;facebook&quot;:1}">
+
+<div id="supersize">
+
+		<div class="menu-outer wrapper">
+        <div class="wrapper clearfix margin-bottom">
+			
+			        
+          <header id="header"><div id="header-responsive"><a href="https://www.cipit.org/" class="logo">
+<p><img class="size-auto" src="fake_files/logo.png" alt="logo" border="0"></p></a><select class="menu-responsive"><option value="/index.php" class="level1">Home</option><option value="#" class="level1 parent">About</option><option value="/index.php/about-us/strathmore" class="level2">- Strathmore</option><option value="/index.php/about-us/cipit" class="level2">- CIPIT</option><option value="/index.php/about-us/areas-of-practice" class="level2">- Areas Of Practice</option><option value="/index.php/about-us/our-partners" class="level2">- Our Partners</option><option value="#" class="level1 parent active">Thematic Areas</option><option value="#" class="level2 parent active">- INTELLECTUAL PROPERTY</option><option value="/index.php/blog/intellectual-property/projects" class="level3 active current" selected="selected">-- IP Projects</option><option value="/index.php/blog/intellectual-property/intellectual-property-laws" class="level3">-- Intellectual Property Laws</option><option value="/index.php/blog/intellectual-property/intellectual-property-manual" class="level3">-- Intellectual Property Manual</option><option value="/index.php/blog/intellectual-property/trademarks-resources" class="level3">-- Trademarks Resources</option><option value="#" class="level2 parent">- INFORMATION TECHNOLOGY</option><option value="/index.php/blog/information-technology/ict-policy-program" class="level3">-- ICT Policy Program</option><option value="/index.php/blog/information-technology/it-projects" class="level3">-- ICT Projects</option><option value="/index.php/blog/resources" class="level2 parent">- RESOURCES</option><option value="/index.php/blog/resources/articles-publications" class="level3">-- Articles &amp; Publications</option><option value="/index.php/blog/resources/copyright-law" class="level3">-- Copyright Law Videos</option><option value="/index.php/blog/resources/databases" class="level3">-- Databases</option><option value="/index.php/blog/resources/case-laws" class="level3">-- Case Laws</option><option value="/index.php/blog/resources/calender-of-events" class="level3">-- Calender of Events</option><option value="http://blog.cipit.org/" class="level1">Blog</option><option value="#" class="level1 parent">Training</option><option value="#" class="level2 parent">- ACADEMIC COURSES</option><option value="/index.php/training/academic-courses/premium-content" class="level3">-- Patent Drafting</option><option value="/index.php/training/ip-clinic" class="level2">- IP CLINIC</option><option value="/index.php/fellowships" class="level1">Fellowships</option><option value="/index.php/contact-item" class="level1">Contact</option></select></div>
+                    <div id="headerbar" class="clearfix">
+                        	
+                        <a id="logo" href="https://www.cipit.org/">
+<p><img class="size-auto" src="fake_files/logo.png" alt="logo" border="0"></p></a>
+                                                                        </div>
+                                                <div id="menubar" class="clearfix">
+                            <nav id="menu"><ul class="menu menu-dropdown"><li class="level1 item101"><a href="https://www.cipit.org/index.php" class="level1"><span>Home</span></a></li><li class="level1 item244 parent"><a href="#" class="level1 parent"><span>About</span></a><div class="dropdown columns1" style="display: none; overflow: hidden;"><div style="overflow: hidden;"><div><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2" style="min-height: 143px;"><li class="level2 item266"><a href="https://www.cipit.org/index.php/about-us/strathmore" class="level2"><span>Strathmore</span></a></li><li class="level2 item255"><a href="https://www.cipit.org/index.php/about-us/cipit" class="level2"><span>CIPIT</span></a></li><li class="level2 item267"><a href="https://www.cipit.org/index.php/about-us/areas-of-practice" class="level2"><span>Areas Of Practice</span></a></li><li class="level2 item250"><a href="https://www.cipit.org/index.php/about-us/our-partners" class="level2"><span>Our Partners</span></a></li></ul></div></div></div></div></div></div></li><li class="level1 item245 parent active"><a href="#" class="level1 parent active"><span>Thematic Areas</span></a><div class="dropdown columns1" style="display: none; overflow: hidden;"><div style="overflow: hidden;"><div><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2" style="min-height: 324px;"><li class="level2 item246 parent active"><a href="#" class="level2 parent active"><span>INTELLECTUAL PROPERTY</span></a><ul class="nav-child unstyled small level3"><li class="level3 item248 active current"><a href="https://www.cipit.org/index.php/blog/intellectual-property/projects" class="level3 active current"><span>IP Projects</span></a></li><li class="level3 item252"><a href="https://www.cipit.org/index.php/blog/intellectual-property/intellectual-property-laws" class="level3"><span>Intellectual Property Laws</span></a></li><li class="level3 item253"><a href="https://www.cipit.org/index.php/blog/intellectual-property/intellectual-property-manual" class="level3"><span>Intellectual Property Manual</span></a></li><li class="level3 item269"><a href="https://www.cipit.org/index.php/blog/intellectual-property/trademarks-resources" class="level3"><span>Trademarks Resources</span></a></li></ul></li><li class="level2 item247 parent"><a href="#" class="level2 parent"><span>INFORMATION TECHNOLOGY</span></a><ul class="nav-child unstyled small level3"><li class="level3 item271"><a href="https://www.cipit.org/index.php/blog/information-technology/ict-policy-program" class="level3"><span>ICT Policy Program</span></a></li><li class="level3 item272"><a href="https://www.cipit.org/index.php/blog/information-technology/it-projects" class="level3"><span>ICT Projects</span></a></li></ul></li><li class="level2 item251 parent"><a href="https://www.cipit.org/index.php/blog/resources" class="level2 parent"><span>RESOURCES</span></a><ul class="nav-child unstyled small level3"><li class="level3 item249"><a href="https://www.cipit.org/index.php/blog/resources/articles-publications" class="level3"><span>Articles &amp; Publications</span></a></li><li class="level3 item254"><a href="https://www.cipit.org/index.php/blog/resources/copyright-law" class="level3"><span>Copyright Law Videos</span></a></li><li class="level3 item264"><a href="https://www.cipit.org/index.php/blog/resources/databases" class="level3"><span>Databases</span></a></li><li class="level3 item268"><a href="https://www.cipit.org/index.php/blog/resources/case-laws" class="level3"><span>Case Laws</span></a></li><li class="level3 item273"><a href="https://www.cipit.org/index.php/blog/resources/calender-of-events" class="level3"><span>Calender of Events</span></a></li></ul></li></ul></div></div></div></div></div></div></li><li class="level1 item127"><a href="http://blog.cipit.org/" class="level1"><span>Blog</span></a></li><li class="level1 item256 parent"><a href="#" class="level1 parent"><span>Training</span></a><div class="dropdown columns1" style="display: none; overflow: hidden;"><div style="overflow: hidden;"><div><div class="dropdown-bg"><div><div class="width100 column"><ul class="nav-child unstyled small level2" style="min-height: 98px;"><li class="level2 item258 parent"><a href="#" class="level2 parent"><span>ACADEMIC COURSES</span></a><ul class="nav-child unstyled small level3"><li class="level3 item260"><a href="https://www.cipit.org/index.php/training/academic-courses/premium-content" class="level3"><span>Patent Drafting</span></a></li></ul></li><li class="level2 item259"><a href="https://www.cipit.org/index.php/training/ip-clinic" class="level2"><span>IP CLINIC</span></a></li></ul></div></div></div></div></div></div></li><li class="level1 item257"><a href="https://www.cipit.org/index.php/fellowships" class="level1"><span>Fellowships</span></a></li><li class="level1 item152"><a href="https://www.cipit.org/index.php/contact-item" class="level1"><span>Contact</span></a></li></ul></nav>
+                                                 </div>
+                     </header></div>
+                
+            </div>
+            </div><!--end menu-outer-->
+
+	        <div class="module mod-blank  deepest">
+
+			
+
+        <div class="container jpslitslider">
+            <div id="slider" class="sl-slider-wrapper" style="height: 280px;">
+
+				<div class="sl-slider" style="width: 1353px; height: 280px;">
 
 
+							<!-- slider 1 -->
 
-	<title>Safe Sex</title>
+					<div class="sl-slides-wrapper"><div class="sl-slide sl-slide-horizontal" data-orientation="horizontal" data-slice1-rotation="25" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="2" style="display: block;">
+						<div class="sl-content-wrapper" style="width: 1353px; height: 280px;"><div class="sl-content"><div class="sl-slide-inner">
 
+								<div class="bg-img">
+									<img class="bg-img" alt="slide 1" src="fake_files/Inner-Headers-Final.png">
+								</div>
+							<div class="wrapper padding-top clearfix">
+							
+																<div style="color:#fff;width:50%;background:#0592a7;font-size:34px;opacity:0; margin:140px 0 20px 0" class="text-container slideInDown normal easeout animated"> 
+								</div>
+															</div>
+						</div></div></div>
+					</div></div>
 
-
-	<meta name="Publisher" content="Coalition for Positive Sexuality">
-
-	<meta http-equiv="Reply-to" content="cps@positive.org">
-
-	<meta name="resource-type" content="document">  
-
-	<meta name="distribution" content="global">
-
-	<meta name="keywords" content="AIDS, HIV, STD, safe sex, safer sex, latex, condom, intercourse">
-
-	<meta name="description" content="Safe sex is always better! It's fun, and you don't have to worry as much.">
-
-	<meta name="generator" content="Microsoft FrontPage 4.0">
-
+			
 
 
-<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+			
 
 
-
-<body alink="#3399FF" bgcolor="#FFFFFF" link="#0066CC" vlink="#003399">
-
+			
 
 
-<!-- page header -->
+			
 
 
+			
 
-<img src="fake_files/small.gif" alt="CPS" align="LEFT" border="0" height="120" hspace="0" width="108"><img src="fake_files/JustSayYes.gif" alt="JustSayYes" border="0" height="68" width="374"><br>
-
-<img src="fake_files/safesex.gif" alt="safesex" border="0" height="52" width="374">
-
-
-
-<!-- table for layout in 3 columns -->
-
-
-
-<table border="0" cellpadding="0" cellspacing="0" width="552">
-
-	<tbody><tr valign="top">
-
-
-
-		<!-- button column -->
-
-
-
-		<td width="152">
-
-			<center><img src="fake_files/left.gif" usemap="#left" border="0" height="270" width="108"></center>
+				</div><!-- /sl-slider -->
 
 		
 
-		<map name="left">
-
-		<area shape="rect" coords="0,0,108,45" href="http://www.positive.org/JustSayYes/index.html">
-
-		<area shape="rect" coords="0,46,108,90" href="http://www.positive.org/LetsTalk/welcome.html">
-
-		<area shape="rect" coords="0,91,108,135" href="http://www.positive.org/Resources/index.html">
-
-		<area shape="rect" coords="0,136,108,180" href="http://www.positive.org/TalkBack/index.html">
-
-		<area shape="rect" coords="0,181,108,225" href="http://www.positive.org/Search/index.html">
-
-		<area shape="rect" coords="0,226,108,270" href="http://www.positive.org/Home/index.html">
-
-		</map>
+				
+			</div><!-- /slider-wrapper -->
+        </div> <!-- /sl-container -->
 
 
+		
+</div>    <!--end supersize-->
 
-<a href="javascript:void(0)" onclick='window.open("../images/girlgerms/big/lubesld.jpg","displayWindow","scrollbars=no,status=no,resizable=no,width=394,height=520")'><img src="fake_files/lubesld.jpg" border="0" height="202" hspace="5" vspace="5" width="151"></a><br><center><font size="2">Click poster to enlarge</font><br></center>		
+<div id="mainsite" class="clearfix">
 
-<p>
 
-</p><center><b>The secret to great sex... water-based lube</b></center>
+		
+		<div style="padding:20px 0 0 0" class="main-outer clearfix">
+		<div class="wrapper clearfix">
+			<div id="main" class="grid-block">
+	
+				<div id="maininner" class="grid-box">
+															<section id="breadcrumbs"><div class="breadcrumbs"><a href="https://www.cipit.org/index.php">Home</a><a href="#">Thematic Areas</a><a href="#">INTELLECTUAL PROPERTY</a><strong>IP Projects</strong></div></section>
+						
+										<section id="content" class="grid-block"><div id="system-message-container">
+	</div>
+
+<div id="system">
 
 	
-
-<p>
-
-</p><center><a href="http://www.positive.org/Home/orders.html">Click here to get CPS posters</a></center>	
+	<article class="item">
 
 		
+			
+		
+		<div class="content clearfix">
 
 		
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <img src="fake_files/ASK-Logo.png" alt="" width="93" height="101"></p>
+<!-- [if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<p class="MsoNormal" style="mso-outline-level: 1;"><strong>African Scholars for Knowledge Justice (ASK Justice)</strong></p>
+<p class="MsoNormal">The African Scholars for Knowledge Justice (ASK 
+Justice) Project seeks to contribute to positive policy change to 
+increase access to medicines and access to knowledge. The project sets 
+out to build a strong network of engaged faculty members at Southern and
+ East African universities who through research, teaching and public 
+voice from a human rights perspective influence current and future 
+Intellectual Property law and policy reform processes in Africa.&nbsp;<br>
+ ASK Justice believes that a better understanding of the under-explored 
+interface of Human Rights, Intellectual Property and the Public Interest
+ will lead to positive policy change, and integrating this understanding
+ into mainstream teaching and research will make teaching and research 
+in this area more sustainable. The project is carried out by 
+participating faculty from Strathmore University as well as the 
+University of Nairobi, Makerere University, University of KwaZulu-Natal 
+and University of Cape Town.</p>
+<hr>
+<p class="MsoNormal"><!-- [if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--></p>
+<p class="MsoNormal"><!-- [if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!-- [if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!-- [if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--></p>
+<p class="MsoNormal" style="mso-outline-level: 1;"><b style="mso-bidi-font-weight: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <img src="fake_files/OpenAIR-Logo.png" alt="" width="193" height="57"></b></p>
+<p class="MsoNormal" style="mso-outline-level: 1;"><b style="mso-bidi-font-weight: normal;">Open African Innovation Research (Open AIR) Project</b></p>
+<p class="MsoNormal">The Open African Innovation Research (Open AIR) 
+Partnership is a pan-African research project involving Strathmore 
+University along with four other leading universities - the University 
+of Ottawa in Canada, the University of Cape Town in South Africa, the 
+Nigerian Institute for Advanced Legal Studies, and the American 
+University in Cairo, Egypt. Open AIR’s primary goal is to uncover new 
+insights to ease tensions between IP and acce<a name="_GoBack"></a>ss to
+ knowledge. Specifically, we aim to solve a problem at the heart of IP 
+and innovation policy: how to reconcile tensions between appropriation 
+and access, excluding and sharing, and competing and collaborating. In 
+dealing with this problem, Open AIR’s research is showing how 
+knowledge-based businesses can bypass outmoded, constrictive knowledge 
+governance practices to capitalize on open collaborative innovation 
+strategies.&nbsp;<br> Open AIR is currently focused on three priority 
+research themes. The first explores the nuances of innovation at high 
+technology hubs, explaining how and why new business are likely to 
+succeed or fail across Africa and in Canada. The second research theme, 
+which dovetails with the first, is informal sector entrepreneurship, 
+where resilience and innovative practices are often attributed to a 
+shared spirit of openness and collaboration. Finally, the network is 
+researching and collaborating with indigenous communities, which have a 
+long history of collaborative knowledge production. In all of these 
+areas, Open AIR is working to create new and improved intellectual 
+property policies, performance metrics and management practices. CIPIT 
+is the East Africa hub for Open AIR and the research lead for the high 
+technology hubs theme.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<!-- [if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!-- [if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!-- [if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+<p><!-- [if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--></p>
+<p><!-- [if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!-- [if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!-- [if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--></p> 		</div>
 
+								
+		
+		
+		
+			
+	</article>
+
+</div></section>
+						
+									</div>
+				<!-- maininner end -->
+				
+								<aside id="sidebar-a" class="grid-box"><div class="grid-box width100 grid-v"><div class="module mod-box  deepest">
+
+			<ul class="menu menu-sidebar"><li class="level1 item117 parent"><span class="nav-header level1 parent"><span>Intellectual Property</span></span>
+<div style="display: none; height: 0px;"><ul class="nav-child unstyled small level2"><li class="level2 item118"><a href="https://www.cipit.org/index.php/ip/publications" class="level2"><span>Publications</span></a></li><li class="level2 item119"><a href="https://www.cipit.org/index.php/ip/iplaws" class="level2"><span>Intellectual Property Laws</span></a></li><li class="level2 item120"><a href="https://www.cipit.org/index.php/ip/ipmanuals" class="level2"><span>Intellectual Property Manual</span></a></li><li class="level2 item270"><a href="https://www.cipit.org/index.php/ip/trademarks-resources" class="level2"><span>Trademarks Resources</span></a></li></ul></div></li><li class="level1 item121 parent"><span class="nav-header level1 parent"><span>Information Technology</span></span>
+<div style="display: none; height: 0px;"><ul class="nav-child unstyled small level2"><li class="level2 item122"><a href="https://www.cipit.org/index.php/information-technology/it-projects" class="level2"><span>IT projects</span></a></li></ul></div></li><li class="level1 item116 parent"><span class="nav-header level1 parent"><span>Resources</span></span>
+<div style="display: none; height: 0px;"><ul class="nav-child unstyled small level2"><li class="level2 item112"><a href="https://www.cipit.org/index.php/resources/copyright-law-videos" class="level2"><span>Copyright Law Videos</span></a></li></ul></div></li></ul>		
+</div></div></aside>
+								
+								
+			</div><!-- main end -->
+			
+		</div><!-- wrapper end -->
+	</div><!-- main-outer end -->
+	
 		
 
-		</td>
-
-
-
-		<!-- spacer -->
-
-
-
-		<td width="6"> <br> </td>
-
-
-
-		<!-- bodytext column -->
-
-
-
-		<td width="264">
-
-
-
-		<!-- bodytext -->
-
-
-
-
-
-<p>
-
-<font size="+1"><b>N</b></font>obody has a body to die for. Safe sex is always better! It's fun, and you don't have to worry as much.
-
-</p>
-
-
-
-<img src="fake_files/safesex1.gif" align="RIGHT" border="0" height="119" width="119">
-
-
-
-<p>
-
-Safe sex means making sure you don't get anyone else's blood, semen, 
-vaginal fluids, or breast milk in your body -- and protecting your 
-partners too! Condoms, latex surgical
-<a href="http://www.positive.org/JustSayYes/moresafe.html">gloves</a>, and <a href="http://www.positive.org/JustSayYes/moresafe.html"> plastic wrap</a> are the only ways to protect yourself and your partner from <a href="http://www.positive.org/JustSayYes/glossary.html#std">STDs</a> and <a href="http://www.positive.org/JustSayYes/glossary.html#hiv">HIV</a>, but they're not foolproof.  You've got to use them correctly every time you have sex.
-
-</p>
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
-
-
-
-<p>
-
-<font size="+3"><b><tt>condoms</tt></b></font>
-
-</p>
-
-
-
-        <p>
-
-The best condoms for anal and vaginal <a href="http://www.positive.org/JustSayYes/glossary.html#intercourse">intercourse</a> are lubricated latex condoms.
-        We do not recommend lambskin condoms because they don&#8217;t block HIV and
-        STDs.<span style="mso-spacerun: yes">&nbsp; </span>I<span style="mso-bidi-font-size:10.0pt">f you're
-        allergic to latex you can use polyurethane condoms.&nbsp;</span>
-        Using lubricant will make things go smoother and give you added 
-protection. Lube is especially great for women the first time you have 
-intercourse, or if you tend to get sore. But always use a water-based 
-lube (such as KY Jelly, Astroglide, Aqua Lube, Wet, Foreplay, or Probe).
- Oil breaks latex. Don't use vaseline, hand creams or lotions as a 
-lubricant. Also, treatments for yeast infections contain oil and will 
-break latex. Oil is good for salads and cars, not for sex! You can buy 
-water-based lube and condoms at the drugstore.
-
-</p>
-
-
-
-<p>
-
-Always use a condom.
-
-</p>
-
-
-
-      <p> <b>If you're going to suck your partner's dick (blowjob)</b>, put a condom 
-        on it first. Try non-lubricated or flavored condoms for this. Whatever 
-        you do, don't get semen (cum) in your mouth, because you could get an
-      STD or HIV 
-        that way. If you have a sore throat or small cuts on your gums (say from 
-        brushing your teeth), there's a risk of HIV going from the semen into 
-        your blood stream. </p>
-
-
-
-<p>
-
-<b>If you're doing someone with a sex toy</b> -- vegetable, dildo, 
-vibrator, or whatever -- put a condom on that thing! Don't switch the 
-toy from butthole to vagina, or from one person's body to another, until
- you put a new condom on it.
-
-</p>
-
-
-
-<p>
-
-Some people think that putting on a condom is too much work when you're 
-supposed to be having fun.  But it's easy for condoms to be really fun 
-and erotic. Be creative!
-
-</p>
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
-
-
-
-<p>
-
-<font size="+3"><b><tt>here's what you do:</tt></b></font>
-
-</p>
-
-
-
-<img src="fake_files/safesex1.gif" align="RIGHT" border="0" height="119" width="119">
-
-
-
-	<ol> 
-
-		<li><b>Get ready.</b> Make sure your condoms are fresh -- check the 
-expiration date. Throw away condoms that have expired, been very hot, 
-carried around in your wallet, or washed in the washer.  If you think 
-the condom might not be good, get a new one. You and your partner are 
-worth it.<p>
-
+	<div class="bottom-d-outer" style="padding:10px 0">
+		<div class="wrapper clearfix" style="padding:10px 0">
+						<section id="bottom-d" class="grid-block"><div class="grid-box width25 grid-h"><div class="module   deepest" style="min-height: 223px;">
+
+		<h3 class="module-title">Site Map</h3>	
+<ul>
+<li style="text-align: left;"><a title="About Us" href="https://www.cipit.org/index.php/about-us/cipit">About Us</a>&nbsp;</li>
+<li style="text-align: left;"><a href="https://www.cipit.org/index.php/training/academic-courses/premium-content">Patent Drafting course</a></li>
+<li style="text-align: left;"><a href="https://www.cipit.org/index.php/blog/resources/databases/1468-latest-on-intellectual-property">Distinguished Speakers series</a></li>
+<li style="text-align: left;"><a href="https://www.cipit.org/index.php/blog/resources/1474-opportunities">Opportunities</a></li>
+<li style="text-align: left;"><a href="https://www.cipit.org/index.php/ip/ipmanuals">Patenting process</a></li>
+<li style="text-align: left;"><a href="https://www.cipit.org/index.php/training/ip-clinic">Free IP Consulting</a></li>
+</ul>		
+</div></div><div class="grid-box width25 grid-h"><div class="module   deepest" style="min-height: 223px;">
+
+		<h3 class="module-title">Newsletter</h3>	
+<p>Join our newsletter for <strong><em>CIPIT news</em></strong> through subscriptions!</p>
+<p><input style="padding: 6px; margin-right: 10px;" maxlength="30" name="name" size="20" value="email" type="text"><a class="button-default" href="#">SEND</a></p>		
+</div></div><div class="grid-box width25 grid-h"><div class="module   deepest" style="min-height: 223px;">
+
+		<h3 class="module-title">Social Media </h3>	
+<p><a title="@StrathCIPIT" href="https://twitter.com/StrathCIPIT"><img src="fake_files/twitterPNG.png" alt="" width="122" height="23"></a></p>
+<p><a title="Cipit facebook" href="https://www.facebook.com/sls.cipit"><img src="fake_files/facebookPNG.png" alt="" width="117" height="24"></a></p>
+<p><a title="CIPIT Youtube" href="https://www.youtube.com/user/cipitstrathmore"><img src="fake_files/youtubePNG.png" alt="" width="119" height="26"></a></p>
+<p><a title="CIPIT Blog" href="http://blog.cipit.org/" target="_blank"><img src="fake_files/wordpress_logo.png" alt="" width="48" height="48"></a></p>		
+</div></div><div class="grid-box width25 grid-h"><div class="module   deepest" style="min-height: 223px;">
+
+		<h3 class="module-title">Contact Us</h3>	
+<div class="textwidget">
+<p><strong>TEL </strong>: <span style="font-size: 12pt; font-family: 'times new roman', times;">(254) 703 034 612&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="font-size: 12pt; font-family: 'times new roman', times;">&nbsp;<img src="fake_files/strathmore-logo.jpg" alt="" width="282" height="97"></span></p>
+</div>		
+</div></div></section>
+					</div>
+	</div>
+
+
+			<div class="footer-outer" style="padding:10px 0">
+			<div class="wrapper clearfix" style="padding:10px 0">
+				<section id="footer-a" class="grid-block"><div class="grid-box width50 grid-h"><div class="module   deepest">
+
+			<ul class="menu menu-line"><li class="level1 item108"><a href="https://www.cipit.org/index.php/blog/intellectual-property/projects" class="level1"><span>Disclaimer</span></a></li><li class="level1 item109"><a href="https://www.cipit.org/index.php/component/content/?id=4&amp;Itemid=104" class="level1"><span>Privacy Policy</span></a></li><li class="level1 item110"><a href="https://www.cipit.org/index.php/component/content/7-blog?layout=blog&amp;Itemid=107" class="level1"><span>FAQs</span></a></li></ul>		
+</div></div><div class="grid-box width50 grid-h"><div class="module   deepest">
+
+			
+<p style="text-align: right;">CIPIT © 
+2018 
+</p>		
+</div></div></section>
+								<p id="back-top"><a href="#page"><span></span></a></p>
+							</div>
+		</div>
 		
 
-		</p></li><li>That dick has to be hard before you put a condom on it. <p>
+	
+</div><!-- main-site end -->
 
-		
 
-		</p></li><li><b>Open it. </b>Tear open the package carefully, so you don't rip the condom.  Careful if you use your teeth.<p>
 
-		
-
-		</p></li><li>If the penis is uncut (uncircumcised), pull the foreskin back first.<p>
-
-		
-
-		</p></li><li><b>Make sure the condom is right side out.</b>  It's like
- a sock: there's a right side and wrong side.  First unroll it about 
-half an inch to see in which direction it is unrolling. Then put it on. 
-It should unroll easily down your dick. If you start off wrong, try 
-again with a new condom. You'll see when you practice.<p>
-
-		
-
-		</p></li><li><b>Hold the top half-inch of the condom</b> between your fingers when you roll it down. This keeps out air bubbles, which can cause the condom to break. It
-          also leaves a space at the end for the cum.<p>
-
-		
-
-		</p></li><li><b>Roll the condom down</b> as far as it will go. It should reach the base of the penis near the balls<p>
-
-		
-
-		</p></li><li>For anal intercourse, <b>use lots of lube.</b>  Water-based lube is great for vaginal intercourse, too. Put the lube on after you put on the condom, not before --
-          the condom could slip off. Add more lube often. Dry condoms break more easily.<p>
-
-		
-
-		</p></li><li>Guys --  when you pull out hold the condom near your 
-balls so it doesn't slip off. Try to pull out while you're still hard. 
-Take the condom off
-          only after you are completely out of your partner.<p>
-
-		
-
-		</p></li><li><b>Throw out the used condom right away.</b> Use a condom
- only once. Never use the same condom for vaginal and anal intercourse. 
-Never use a condom that has been in, or used by someone else. Never cum 
-more than once in the same condom.<p> 
-
-	</p></li></ol>
-
- 
-
-<p>
-
-<font size="+1"><b>G</b></font>uys, practice putting on a condom in a 
-comfortable place where you have plenty of time by yourself. You know 
-what we mean!  Practice makes perfect, and you'll impress your partner. 
-Girls, practice putting a condom on a banana.
-
- 
-
-</p><p>
-
-<font size="+1"><b>Y</b></font>ou can get <a href="http://www.positive.org/JustSayYes/glossary.html#hiv">HIV</a> and <a href="http://www.positive.org/JustSayYes/glossary.html#std">STDs</a> even if you're not having <a href="http://www.positive.org/JustSayYes/glossary.html#intercourse">intercourse</a>. It can't hurt to cover all the bases -- with latex, that is!
-
-</p>
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
-
-
-
-<p>
-
-<font size="+3"><b><tt>plastic wrap</tt></b></font>
-
-</p>
-
-
-
-        <img src="fake_files/Dentaldam_smallBW.jpg" alt="dental dam" align="right" border="0" height="116" width="144">
-
-
-
-<p>
-
-If you're going to be licking your partner's vulva and clit (eating 
-out), use a piece of plastic wrap to be safe. Yes!  All you need is some
-plastic-wrap, or a condom cut down the side and laid flat. Be sure to 
-cover the entire crotch. You could put some honey or jam on your side of
- the plastic wrap and just eat away! Also, putting some lube on the 
-other side of the plastic wrap may make it
-even more fun for her. But never flip the plastic over while you're 
-eating out. If you're going to move from one partner to another or from 
-butthole to
-vulva, use a new piece.
-
-</p>
-
-
-
-<p>
-
-It's especially important to use plastic wrap if your partner is having her period. Menstrual blood can carry HIV and STDs.
-
-</p>
-
-
-
-<p>
-
-If you're going to be licking your partner's butthole (rimming), cover it with plastic wrap too. This keeps you safe from
-harmful bacteria and STD's. A <b>dental dam</b> is a square piece of 
-latex that you can use just like plastic wrap. You can get dental dams 
-at condom stores, dentists offices, and some drugstores.
-
-</p>
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="4" width="264">
-
-
-
-<p>
-
-<font size="+3"><b><tt>latex gloves</tt></b></font>
-
-</p>
-
-
-
-
-
-<p>
-
-Putting your fingers or fist in your partner's vagina or butthole 
-(finger fucking or fisting) is safe as long as you don't have cuts or 
-sores on your hands and your partner is not on her period. The safest 
-way to do it is to wear a latex surgical glove (not a dishwashing glove)
- and use lots of water-based lube. You can get latex surgical gloves at 
-the drugstore.
-
-</p>
-
-
-
-<p>
-
-You can still safely do almost everything else that turns you on -- kissing, stroking, massaging, <br>
-grinding . . .</p>
-
-<p>
-
-</p>
-
-
-
-<nobr>
-
-
-
-	<!-- navigation buttons -->
-
-
-
-		<img src="fake_files/bottom.gif" usemap="#bottom" border="0" height="45" width="264">
-
-
-
-	<map name="bottom">
-
-		<area shape="rect" coords="28,1,80,46" href="http://www.positive.org/JustSayYes/respect.html">
-
-		<area shape="rect" coords="81,0,183,45" href="http://www.positive.org/JustSayYes/contents.html">
-
-		<area shape="rect" coords="184,0,236,45" href="http://www.positive.org/JustSayYes/aids.html">
-
-	</map>
-
-
-
-	<!-- hidden navigation for text only browsers -->
-
-
-
-		<font color="#FFFFFF" size="1">
-
-		| <a href="http://www.positive.org/JustSayYes/respect.html"><font color="#FFFFFF">&lt;</font></a>
-
-		| <a href="http://www.positive.org/JustSayYes/contents.html"><font color="#FFFFFF">Contents</font></a>
-
-		| <a href="http://www.positive.org/JustSayYes/moresafe.html"><font color="#FFFFFF">&gt;</font></a>
-
-		|
-
-		</font>
-
-
-
-</nobr>
-
-
-
-		</td>
-
-
-
-		<!-- spacer -->
-
-
-
-		<td width="10"><br></td>
-
-
-
-		<!-- pullout quotes column -->
-
-
-
-		<td align="RIGHT" width="104">
-
-
-
-		<!-- spacer -->
-
-
-
-		<img src="fake_files/blank.gif" border="0" height="72" width="104">
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
-
-		<font color="#0066CC" size="+2"><b><tt>nobody has a body to die for</tt></b></font>
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
-
-
-
-		<!-- spacer -->
-
-
-
-		<img src="fake_files/blank.gif" border="0" height="144" width="104">
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
-
-		<font color="#0066CC" size="+2"><b><tt>always use a condom</tt></b></font>
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
-
-
-
-		<!-- spacer -->
-
-
-
-		<img src="fake_files/blank.gif" border="0" height="360" width="104">
-
-
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
-
-		<font color="#0066CC" size="+2"><b><tt>be creative!</tt></b></font>
-
-<!-- color rule -->
-
-<img src="fake_files/cyan.gif" border="0" height="2" vspace="0" width="104">
-
-
-
-
-
-
-
-		<!-- end bodytext -->
-
-		
-
-		</td>
-
-
-
-	</tr>
-
-</tbody></table>
-
-
-
-<!-- footer -->
-
-
-
-<table border="0" cellpadding="0" cellspacing="0" width="508">
-
-	<tbody><tr>
-
-		<td align="CENTER">
-
-
-
-<p>
-
-<font size="-1">
-
-| <a href="http://www.positive.org/JustSayYes/index.html">JustSayYes</a>
-
-| <a href="http://www.positive.org/LetsTalk/welcome.html">LetsTalk</a>
-
-| <a href="http://www.positive.org/Resources/index.html">Resources</a>
-
-| <a href="http://www.positive.org/TalkBack/index.html">TalkBack</a>
-
-| <a href="http://www.positive.org/Search/index.html">Search</a>
-
-| <a href="http://www.positive.org/Home/index.html">Home</a>
-
-| <a href="http://www.positive.org/Home/orders.html">Get CPS Stuff</a>
-
-|
-
-</font>
-
-</p>
-
-<table bordre="0" width="300"><tbody><tr><td align="left">
-
-<b>The Coalition for Positive Sexuality (CPS)</b> is a grassroots, not-for-profit,
-
-activist organization.  <b>CPS</b> is funded through donations and grants.  Please help us to continue providing teens with candid sex education
-          materials, and this website, by making a tax-deductible donation. <a href="http://www.positive.org/Home/contact-us.html" target="_blank">Email us to find out how to donate.</a><br>
-</td></tr></tbody></table>
-
-<p>
-
-<font size="-1">
-
-<a href="http://www.positive.org/Home/copyright.html">Copyright \A9 1997 
-
-Coalition for Positive Sexuality</a>
-
-</font>
-
-</p>
-
-
-
-		</td>
-
-	</tr>
-
-</tbody></table>
-
-
-
-<!--
-
-	Rendering Information:
-
-	adrObject "user.websites.CPS.JustSayYes.safesex"
-
-	objectCreated "3/27/97; 1:37:39 PM"
-
-	objectModified "8/12/98; 4:48:34 PM"
-
-	lastBuildTime "8/12/98; 6:45:02 PM"
-
-
-
-	site design and programming
-
-		by Brad Borevitz (bradb@123pushit.com)
-
-
-
-		design and all graphic elements
-
-		copyright 1997 pushit web development
-
--->
-
-
-
-
-
-
-
-</body></html>
+<div id="lightbox-tmp"></div><div id="lightbox-loading"><div></div></div><div id="lightbox-overlay" style="display: none;"></div><div id="lightbox-wrap" style=""><div id="lightbox-outer"><div id="lightbox-content"></div><a id="lightbox-close"></a><div id="lightbox-title"></div><a href="javascript:;" id="lightbox-left"><span id="lightbox-left-ico"></span></a><a href="javascript:;" id="lightbox-right"><span id="lightbox-right-ico"></span></a></div></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="fake_files/FdM1l_dpErI.html" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><iframe scrolling="no" allowtransparency="true" src="fake_files/widget_iframe.html" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>

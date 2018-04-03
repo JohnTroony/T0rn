@@ -1,0 +1,103 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/responsive.css);
+
+
+/* Breakpoints
+----------------------------------------------------------------------------------------------------*/
+
+/* All except large Screens */
+@media (max-width: 1220px) {
+}
+
+/* Only Phones and Tablets (Portrait) */
+@media (max-width: 1080px) {
+.menu-responsive {
+    font-size: 14px;
+	display:block;
+    width: 80%!important;
+	margin:0 10%;
+}
+select.menu-responsive {
+	float:none
+}
+
+#header-responsive {
+    display: block;
+}
+#header-responsive .searchbox {
+    display: none;
+}
+#header-responsive .logo {
+    display: block;
+	margin:0 auto;
+}
+#header-responsive .logo {
+text-align:center;
+margin:0 auto;
+}
+#header-responsive .logo img {
+max-height:100px;
+text-align:center;
+margin:0 auto;
+}
+
+}
+
+/* Only Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* Only Tablets (Portrait) and Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 959px) {
+
+	/* Layout */
+	#search { display: none; }
+
+}
+
+/* Only Phones */
+@media (max-width: 1080px) {
+
+	/* Layout */
+	#back-top,
+	.jp-toolbar-outer,
+	#toolbar,
+	#headerbar,
+	#menubar,
+	#menu,
+	#breadcrumbs,
+	#totop-scroller { display: none; }
+
+}
+
+/* Only Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+
+	/* System */
+	#system .items .item,
+	#system .items .item:first-child {
+		margin-top: 12px;
+		padding-top: 18px;
+		border-top-width: 1px;
+	}
+
+	#system .items :first-child .item:first-child {
+		margin-top: 0;
+		padding-top: 0;
+		border-width: 0;
+	}
+
+	#system .items .leading .item {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-width: 0;
+	}
+
+}
